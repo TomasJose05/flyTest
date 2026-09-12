@@ -1,31 +1,31 @@
 """
-explore_circuit.py - PASO 0 (solo exploracion) del proyecto "startle-induced climbing".
+explore_circuit.py - STEP 0 (exploration only) of the "startle-induced climbing" project.
 
-Objetivo: averiguar si en el conectoma MaleCNS v1.0 existe un circuito PEQUENO e
-IDENTIFICABLE para la geotaxis negativa (la mosca, tras un golpe, trepa hacia arriba).
-NO simula nada, NO baja tablas de conectividad: solo metadatos de neuronas.
+Goal: find out whether the MaleCNS v1.0 connectome contains a SMALL, IDENTIFIABLE circuit
+for negative geotaxis (after being knocked down, the fly climbs upward).
+This builds no simulation and downloads no connectivity: neuron metadata only.
 
-Mapa mental del circuito, en 3 eslabones (misma logica que un pipeline web:
-input -> controller -> output):
+The circuit as three links (same shape as a web pipeline: input -> controller -> output):
 
-  1. SENSORES (mecanosensoriales): la mosca "siente" el golpe y donde esta el suelo.
-     Cerdas (bristles) = tacto; sensilla campaniforme = fuerza/carga en la pata;
-     organo cordotonal = estiramiento/vibracion; Johnston's organ (wind_gravity) =
-     antena, detecta gravedad y viento. Estos son la ENTRADA del reflejo.
-  2. NEURONAS DESCENDENTES (DN): ~1300 neuronas que bajan del cerebro al VNC. Son el
-     cuello de botella del sistema: TODA orden motora pasa por aqui. Son el "comando".
-  3. MOTONEURONAS DE PATA (VNC): la salida final que contrae musculos de las 6 patas.
+  1. SENSORS (mechanosensory): how the fly feels the knock and where "down" is.
+     Bristles = touch; campaniform sensilla = load/force on the leg; chordotonal organ =
+     stretch and vibration; Johnston's organ (wind_gravity) = the antenna, which senses
+     gravity and wind. This is the INPUT of the reflex.
+  2. DESCENDING NEURONS (DNs): ~1300 neurons running from the brain down to the ventral
+     nerve cord. They are the bottleneck of the whole system: every motor command passes
+     through them. This is the COMMAND layer.
+  3. LEG MOTOR NEURONS (VNC): the final output that contracts the muscles of the 6 legs.
 
-Por que importa: si el eslabon 2 son pares bilaterales de 2 neuronas, el circuito es
-simulable; si fueran miles, no.
+Why this matters: if link 2 turns out to be bilateral pairs of 2 neurons, the circuit is
+simulable. If it were thousands, it would not be.
 """
 
 import os
 import sys
 
-# En esta maquina Norton intercepta HTTPS y rompe la verificacion de certificados.
-# truststore hace que Python use el almacen de certificados de Windows (donde SI esta
-# el CA de Norton) en vez del bundle de certifi. Inofensivo en otras maquinas.
+# Norton intercepts HTTPS on this machine and breaks certificate verification.
+# truststore makes Python use the Windows certificate store (which does contain Norton's
+# CA) instead of certifi's bundle. Harmless on other machines.
 try:
     import truststore
     truststore.inject_into_ssl()
@@ -36,89 +36,88 @@ import pandas as pd
 from dotenv import load_dotenv
 from neuprint import Client
 
-load_dotenv()                                  # lee el .env que esta junto a este script
-TOKEN = os.environ.get("NEUPRINT_TOKEN")       # nunca hardcodeado: sale del entorno
+load_dotenv()                                  # reads the .env sitting next to this script
+TOKEN = os.environ.get("NEUPRINT_TOKEN")       # never hardcoded: comes from the environment
 if not TOKEN:
-    sys.exit("Falta NEUPRINT_TOKEN. Copia .env.example a .env y pon tu token.")
+    sys.exit("NEUPRINT_TOKEN is missing. Copy .env.example to .env and paste your token.")
 
 SERVER, DATASET = "neuprint.janelia.org", "male-cns:v1.0"
 client = Client(SERVER, dataset=DATASET, token=TOKEN)
 
-# Primero imprimimos los datasets disponibles para confirmar el nombre EXACTO del
-# dataset (neuPrint versiona: "male-cns:v0.9" y "male-cns:v1.0" son bases distintas).
-print(f"Datasets disponibles en {SERVER}:")
+# Print the available datasets first, to confirm the EXACT dataset name: neuPrint keeps
+# versions side by side, and "male-cns:v0.9" and "male-cns:v1.0" are different databases.
+print(f"Datasets available on {SERVER}:")
 for name in sorted(client.fetch_datasets()):
     print(f"   {'->' if name == DATASET else '  '} {name}")
-print(f"\nUsando: {DATASET}\n")
+print(f"\nUsing: {DATASET}\n")
 
-# Cypher = el SQL de Neo4j. En neuPrint cada neurona es un nodo con etiqueta :Neuron
-# (:Neuron = reconstruida y revisada por humanos; hay millones de fragmentos que NO
-# tienen esa etiqueta y quedan fuera a proposito). Agrupamos por n.type = "tipo celular":
-# el nombre de la clase de neurona, no de la neurona individual. Un tipo suele tener 2
-# copias, una por hemisferio. Contar TIPOS, no neuronas, es lo que dice si un circuito
-# es tratable. Solo pedimos metadatos (nombre, clase, neurotransmisor, nro de sinapsis);
-# ninguna tabla de conexiones.
+# Cypher is Neo4j's SQL. In neuPrint every neuron is a node labelled :Neuron (:Neuron means
+# reconstructed and human-proofread; there are millions of fragments WITHOUT that label and
+# they are deliberately left out). We group by n.type = the "cell type": the name of the
+# class of neuron, not of the individual cell. A type usually has 2 copies, one per brain
+# hemisphere. Counting TYPES rather than neurons is what tells you if a circuit is tractable.
+# We only ask for metadata (name, class, neurotransmitter, synapse counts) - no wiring table.
 QUERY = """
 MATCH (n:Neuron) WHERE {predicate}
-RETURN coalesce(n.type, '(sin tipo asignado)') AS tipo,
-       count(*)                                AS neuronas,
-       collect(DISTINCT n.class)[0..2]         AS clase,
-       collect(DISTINCT n.subclass)[0..3]      AS subclase,
-       collect(DISTINCT n.somaNeuromere)[0..3] AS neuromero,
-       collect(DISTINCT n.consensusNt)[0..2]   AS neurotransmisor,
-       sum(n.pre) AS sinapsis_salida, sum(n.post) AS sinapsis_entrada
-ORDER BY neuronas ASC, tipo ASC
+RETURN coalesce(n.type, '(untyped)')           AS type,
+       count(*)                                AS neurons,
+       collect(DISTINCT n.class)[0..2]         AS class,
+       collect(DISTINCT n.subclass)[0..3]      AS subclass,
+       collect(DISTINCT n.somaNeuromere)[0..3] AS neuromere,
+       collect(DISTINCT n.consensusNt)[0..2]   AS neurotransmitter,
+       sum(n.pre) AS out_synapses, sum(n.post) AS in_synapses
+ORDER BY neurons ASC, type ASC
 """
 
-# Cada categoria = (titulo, que estoy preguntando en cristiano, filtro Cypher).
+# Each category = (title, what I am asking in plain language, Cypher filter).
 CATEGORIES = [
-    ("A. Entrada mecanosensorial (el golpe)",
-     "Neuronas que detectan contacto, carga en la pata, vibracion y gravedad. "
-     "Filtro: class empieza por 'mechanosensory' y subclass es uno de los organos "
-     "clasicos del reflejo de enderezamiento.",
+    ("A. Mechanosensory input (the knock)",
+     "Neurons that detect touch, load on the leg, vibration and gravity. Filter: class "
+     "starts with 'mechanosensory' and subclass is one of the sense organs classically "
+     "involved in the righting reflex.",
      "n.class STARTS WITH 'mechanosensory' AND n.subclass IN "
      "['campaniform sensilla','chordotonal organ','hair plate','wind_gravity',"
      "'leg bristle','mechanosensory bristle','leg']"),
 
-    ("B. Neuronas descendentes (la orden)",
-     "Todas las DN: cerebro -> VNC. Son el 'comando' que decide caminar/trepar. "
-     "Filtro: superclass empieza por 'descending'.",
+    ("B. Descending neurons (the command)",
+     "Every DN: brain -> VNC. They are the command layer that decides walk/climb. "
+     "Filter: superclass starts with 'descending'.",
      "n.superclass STARTS WITH 'descending'"),
 
-    ("C. Motoneuronas de pata en el VNC (la salida)",
-     "Motoneuronas del VNC cuyo subclass es fl/ml/hl = pata delantera/media/trasera. "
-     "Son el ultimo eslabon: disparan y el musculo se contrae.",
+    ("C. Leg motor neurons in the VNC (the output)",
+     "VNC motor neurons whose subclass is fl/ml/hl = front/middle/hind leg. The last link: "
+     "they fire and the muscle contracts.",
      "n.superclass = 'vnc_motor' AND n.subclass IN ['fl','ml','hl']"),
 
-    ("D. Atajo: DN nombradas en la literatura de escape/caminata",
-     "Lista corta y explicita de DN ya caracterizadas: DNp01 es la Giant Fiber "
-     "(escape/salto tras un susto), DNa01/DNa02 dirigen giros al caminar, MDN hace "
-     "caminar hacia atras, DNp09 congela. Sirve para anclar el modelo en algo conocido.",
+    ("D. Shortcut: DNs named in the escape / walking literature",
+     "A short, explicit list of already-characterised DNs: DNp01 is the Giant Fiber "
+     "(escape jump after a startle), DNa01/DNa02 steer while walking, MDN drives backward "
+     "walking, DNp09 freezes. Useful to anchor the model to something known.",
      "n.type IN ['DNp01','DNa01','DNa02','DNa10','DNb02','DNg13','DNg100',"
      "'MDN','DNp07','DNp09','DNp10']"),
 ]
 
 
 def as_markdown(df: pd.DataFrame) -> str:
-    """DataFrame -> tabla markdown (evita depender de 'tabulate')."""
+    """DataFrame -> markdown table (avoids depending on 'tabulate')."""
     clean = df.map(lambda v: ", ".join(map(str, v)) if isinstance(v, list) else str(v))
     head = "| " + " | ".join(clean.columns) + " |\n|" + "---|" * len(clean.columns) + "\n"
     return head + "".join("| " + " | ".join(r) + " |\n" for r in clean.values)
 
 
-report = [f"# Candidatos de circuito - geotaxis negativa\n",
-          f"Dataset: `{DATASET}` ({SERVER}) | solo metadatos, sin conectividad.\n"]
+report = [f"# Circuit candidates - negative geotaxis\n",
+          f"Dataset: `{DATASET}` ({SERVER}) | metadata only, no connectivity.\n"]
 
 for title, explanation, predicate in CATEGORIES:
     df = client.fetch_custom(QUERY.format(predicate=predicate))
     print(f"===== {title} =====")
-    print(f"{len(df)} tipos celulares, {df['neuronas'].sum()} neuronas en total")
-    print(df.head(12).to_string(index=False), "\n")   # consola: solo una muestra
+    print(f"{len(df)} cell types, {df['neurons'].sum()} neurons in total")
+    print(df.head(12).to_string(index=False), "\n")   # console: just a preview
     report += [f"\n## {title}\n", f"_{explanation}_\n",
-               f"\n**{len(df)} tipos celulares / {df['neuronas'].sum()} neuronas.** "
-               f"Ordenado de menos a mas neuronas (arriba = mas tratable).\n\n",
-               as_markdown(df)]                       # el .md: la tabla completa
+               f"\n**{len(df)} cell types / {df['neurons'].sum()} neurons.** "
+               f"Sorted fewest neurons first (top = most tractable).\n\n",
+               as_markdown(df)]                       # the .md file: the full table
 
 with open("circuit_candidates.md", "w", encoding="utf-8") as fh:
     fh.write("".join(report))
-print("Escrito circuit_candidates.md")
+print("Wrote circuit_candidates.md")

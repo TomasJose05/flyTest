@@ -1,12 +1,12 @@
-# Candidatos de circuito - geotaxis negativa
-Dataset: `male-cns:v1.0` (neuprint.janelia.org) | solo metadatos, sin conectividad.
+# Circuit candidates - negative geotaxis
+Dataset: `male-cns:v1.0` (neuprint.janelia.org) | metadata only, no connectivity.
 
-## A. Entrada mecanosensorial (el golpe)
-_Neuronas que detectan contacto, carga en la pata, vibracion y gravedad. Filtro: class empieza por 'mechanosensory' y subclass es uno de los organos clasicos del reflejo de enderezamiento._
+## A. Mechanosensory input (the knock)
+_Neurons that detect touch, load on the leg, vibration and gravity. Filter: class starts with 'mechanosensory' and subclass is one of the sense organs classically involved in the righting reflex._
 
-**151 tipos celulares / 3972 neuronas.** Ordenado de menos a mas neuronas (arriba = mas tratable).
+**151 cell types / 3972 neurons.** Sorted fewest neurons first (top = most tractable).
 
-| tipo | neuronas | clase | subclase | neuromero | neurotransmisor | sinapsis_salida | sinapsis_entrada |
+| type | neurons | class | subclass | neuromere | neurotransmitter | out_synapses | in_synapses |
 |---|---|---|---|---|---|---|---|
 | JO-A4 | 1 | mechanosensory | wind_gravity |  | acetylcholine | 28 | 15 |
 | JO-B1_b | 1 | mechanosensory | wind_gravity |  | acetylcholine | 12 | 19 |
@@ -154,18 +154,18 @@ _Neuronas que detectan contacto, carga en la pata, vibracion y gravedad. Filtro:
 | SNta04 | 83 | mechanosensory_tactile | mechanosensory bristle |  | acetylcholine | 18757 | 26285 |
 | JO-unclear | 96 | mechanosensory | wind_gravity |  | acetylcholine | 1061 | 899 |
 | SNta21 | 115 | mechanosensory_proprioceptive, mechanosensory_tactile | leg, mechanosensory bristle |  | acetylcholine | 17035 | 10146 |
-| (sin tipo asignado) | 122 | mechanosensory_proprioceptive, mechanosensory_tactile | leg, chordotonal organ |  | acetylcholine, unclear | 25427 | 11980 |
+| (untyped) | 122 | mechanosensory_proprioceptive, mechanosensory_tactile | leg, chordotonal organ |  | acetylcholine, unclear | 25427 | 11980 |
 | SNta38 | 122 | mechanosensory_tactile | mechanosensory bristle, leg |  | acetylcholine | 17333 | 14112 |
 | SNta20 | 156 | mechanosensory_tactile | leg, mechanosensory bristle |  | acetylcholine | 21424 | 20671 |
 | SNta37 | 228 | mechanosensory_tactile | mechanosensory bristle, leg |  | acetylcholine | 34268 | 35830 |
 | SNta29 | 235 | mechanosensory_tactile | mechanosensory bristle, leg |  | acetylcholine | 35435 | 27532 |
 
-## B. Neuronas descendentes (la orden)
-_Todas las DN: cerebro -> VNC. Son el 'comando' que decide caminar/trepar. Filtro: superclass empieza por 'descending'._
+## B. Descending neurons (the command)
+_Every DN: brain -> VNC. They are the command layer that decides walk/climb. Filter: superclass starts with 'descending'._
 
-**481 tipos celulares / 1316 neuronas.** Ordenado de menos a mas neuronas (arriba = mas tratable).
+**481 cell types / 1316 neurons.** Sorted fewest neurons first (top = most tractable).
 
-| tipo | neuronas | clase | subclase | neuromero | neurotransmisor | sinapsis_salida | sinapsis_entrada |
+| type | neurons | class | subclass | neuromere | neurotransmitter | out_synapses | in_synapses |
 |---|---|---|---|---|---|---|---|
 | DNg01_unclear | 1 |  | lt | LB | acetylcholine | 245 | 596 |
 | DNg55 | 1 |  | xn | MD | gaba | 2398 | 3542 |
@@ -614,7 +614,7 @@ _Todas las DN: cerebro -> VNC. Son el 'comando' que decide caminar/trepar. Filtr
 | MDN | 4 |  | xn |  | acetylcholine | 5633 | 21573 |
 | DNg02_b | 5 |  | ut | LB | acetylcholine | 1741 | 3167 |
 | DNge108 | 5 |  | ut | LB | acetylcholine | 1741 | 3000 |
-| (sin tipo asignado) | 6 |  | xl, xn |  | acetylcholine, unclear | 5683 | 7784 |
+| (untyped) | 6 |  | xl, xn |  | acetylcholine, unclear | 5683 | 7784 |
 | DNg09_a | 6 |  | xn | LB | acetylcholine | 2732 | 4365 |
 | DNg11 | 6 |  | xn | LB | gaba | 2272 | 7312 |
 | DNg110 | 6 |  | ut | LB | acetylcholine | 1908 | 6324 |
@@ -649,12 +649,12 @@ _Todas las DN: cerebro -> VNC. Son el 'comando' que decide caminar/trepar. Filtr
 | DNpe008 | 19 |  | ht |  | acetylcholine | 4085 | 6149 |
 | DNg08 | 23 |  | ut | MX | gaba | 8306 | 11808 |
 
-## C. Motoneuronas de pata en el VNC (la salida)
-_Motoneuronas del VNC cuyo subclass es fl/ml/hl = pata delantera/media/trasera. Son el ultimo eslabon: disparan y el musculo se contrae._
+## C. Leg motor neurons in the VNC (the output)
+_VNC motor neurons whose subclass is fl/ml/hl = front/middle/hind leg. The last link: they fire and the muscle contracts._
 
-**39 tipos celulares / 381 neuronas.** Ordenado de menos a mas neuronas (arriba = mas tratable).
+**39 cell types / 381 neurons.** Sorted fewest neurons first (top = most tractable).
 
-| tipo | neuronas | clase | subclase | neuromero | neurotransmisor | sinapsis_salida | sinapsis_entrada |
+| type | neurons | class | subclass | neuromere | neurotransmitter | out_synapses | in_synapses |
 |---|---|---|---|---|---|---|---|
 | MNml76 | 1 |  | ml | T2 | glutamate | 0 | 120 |
 | MNml83 | 1 |  | ml | T2 | glutamate | 2 | 685 |
@@ -677,7 +677,7 @@ _Motoneuronas del VNC cuyo subclass es fl/ml/hl = pata delantera/media/trasera. 
 | MNml78 | 6 |  | ml | T2 | glutamate | 23 | 2716 |
 | MNml80 | 6 |  | ml | T2 | glutamate | 91 | 10655 |
 | Sternal adductor MN | 6 |  | fl, ml, hl | T1, T2, T3 | acetylcholine | 176 | 11490 |
-| (sin tipo asignado) | 8 |  | fl, hl | T1, T3 | unclear | 150 | 1644 |
+| (untyped) | 8 |  | fl, hl | T1, T3 | unclear | 150 | 1644 |
 | Tergopleural/Pleural promotor MN | 8 |  | fl | T1 | glutamate | 162 | 55764 |
 | Ta depressor MN | 9 |  | fl | T1 | glutamate | 85 | 2190 |
 | ltm1-tibia MN | 9 |  | fl, ml, hl | T1, T2, T3 | glutamate | 238 | 7408 |
@@ -696,12 +696,12 @@ _Motoneuronas del VNC cuyo subclass es fl/ml/hl = pata delantera/media/trasera. 
 | Ti flexor MN | 37 |  | fl, ml, hl | T1, T2, T3 | glutamate | 794 | 62509 |
 | Acc. ti flexor MN | 47 |  | fl, ml, hl | T1, T2, T3 | glutamate | 588 | 32826 |
 
-## D. Atajo: DN nombradas en la literatura de escape/caminata
-_Lista corta y explicita de DN ya caracterizadas: DNp01 es la Giant Fiber (escape/salto tras un susto), DNa01/DNa02 dirigen giros al caminar, MDN hace caminar hacia atras, DNp09 congela. Sirve para anclar el modelo en algo conocido._
+## D. Shortcut: DNs named in the escape / walking literature
+_A short, explicit list of already-characterised DNs: DNp01 is the Giant Fiber (escape jump after a startle), DNa01/DNa02 steer while walking, MDN drives backward walking, DNp09 freezes. Useful to anchor the model to something known._
 
-**11 tipos celulares / 26 neuronas.** Ordenado de menos a mas neuronas (arriba = mas tratable).
+**11 cell types / 26 neurons.** Sorted fewest neurons first (top = most tractable).
 
-| tipo | neuronas | clase | subclase | neuromero | neurotransmisor | sinapsis_salida | sinapsis_entrada |
+| type | neurons | class | subclass | neuromere | neurotransmitter | out_synapses | in_synapses |
 |---|---|---|---|---|---|---|---|
 | DNa01 | 2 |  | xl |  | acetylcholine | 5238 | 26891 |
 | DNa02 | 2 |  | xl |  | acetylcholine | 6253 | 49357 |
