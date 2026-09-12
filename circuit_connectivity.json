@@ -1,0 +1,3632 @@
+{
+  "dataset": "male-cns:v1.0",
+  "neurons": {
+    "sensory": [
+      {
+        "bodyId": 369423058,
+        "type": "JO-A4",
+        "instance": "JO-A4_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 296920599,
+        "type": "JO-B1_a",
+        "instance": "JO-B1_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 519458,
+        "type": "JO-B1_a",
+        "instance": "JO-B1_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 195871166,
+        "type": "JO-B1_a",
+        "instance": "JO-B1_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 219898701,
+        "type": "JO-B1_b",
+        "instance": "JO-B1_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 536998,
+        "type": "JO-B1_c",
+        "instance": "JO-B1_c_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 149854,
+        "type": "JO-B2",
+        "instance": "JO-B2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 168652,
+        "type": "JO-B2",
+        "instance": "JO-B2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 195446,
+        "type": "JO-B2",
+        "instance": "JO-B2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 258426,
+        "type": "JO-B2",
+        "instance": "JO-B2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 526066,
+        "type": "JO-B2",
+        "instance": "JO-B2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 549014,
+        "type": "JO-B2",
+        "instance": "JO-B2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 944907,
+        "type": "JO-B2",
+        "instance": "JO-B2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 79855,
+        "type": "JO-B3",
+        "instance": "JO-B3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 141560,
+        "type": "JO-B3",
+        "instance": "JO-B3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 565953,
+        "type": "JO-B3",
+        "instance": "JO-B3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 928916,
+        "type": "JO-B3",
+        "instance": "JO-B3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 137801097,
+        "type": "JO-B3",
+        "instance": "JO-B3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 241016,
+        "type": "JO-B3",
+        "instance": "JO-B3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 341503,
+        "type": "JO-B3",
+        "instance": "JO-B3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 91617,
+        "type": "JO-B4_a",
+        "instance": "JO-B4_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 129290,
+        "type": "JO-B4_a",
+        "instance": "JO-B4_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 144112,
+        "type": "JO-B4_a",
+        "instance": "JO-B4_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 727132040,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 207663,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 283806,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 516499,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 114598,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 149913,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 190894,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 520657,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 920914,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 397749,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 610917351,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 974267957,
+        "type": "JO-B4_b",
+        "instance": "JO-B4_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 554017,
+        "type": "JO-CA1",
+        "instance": "JO-CA1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 146290481,
+        "type": "JO-CA1",
+        "instance": "JO-CA1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 141266,
+        "type": "JO-CA1",
+        "instance": "JO-CA1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 322016,
+        "type": "JO-CA1",
+        "instance": "JO-CA1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 155319080,
+        "type": "JO-CA1",
+        "instance": "JO-CA1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 992060213,
+        "type": "JO-CA1",
+        "instance": "JO-CA1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 253852731,
+        "type": "JO-CA1",
+        "instance": "JO-CA1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 213338,
+        "type": "JO-CA1",
+        "instance": "JO-CA1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 99367,
+        "type": "JO-CA2",
+        "instance": "JO-CA2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 121251,
+        "type": "JO-CA2",
+        "instance": "JO-CA2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 277683,
+        "type": "JO-CA2",
+        "instance": "JO-CA2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 62434,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 65100,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 75373,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 83741,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 84153,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 87778,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 92768,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 107847,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 133527,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 140357,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 145000,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 220799,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 930160,
+        "type": "JO-CL",
+        "instance": "JO-CL_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 512239,
+        "type": "JO-CL",
+        "instance": "JO-CL_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 512238,
+        "type": "JO-CL",
+        "instance": "JO-CL_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 533959,
+        "type": "JO-CL",
+        "instance": "JO-CL_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 930758,
+        "type": "JO-CL",
+        "instance": "JO-CL_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 332877,
+        "type": "JO-CL",
+        "instance": "JO-CL_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 954303,
+        "type": "JO-CL",
+        "instance": "JO-CL_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 118359732,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 192450,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 520660,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 552568,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 211937357,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 223861,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 69797,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 84184,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 520659,
+        "type": "JO-CM",
+        "instance": "JO-CM_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 330724,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 569803,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 235133,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 354677,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 143099582,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 318054614,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 467856331,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 631555080,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 335272,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 423565,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 468050,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 495608985,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 512629,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 171730006,
+        "type": "JO-CM",
+        "instance": "JO-CM_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 835154280,
+        "type": "JO-DA",
+        "instance": "JO-DA_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 516332,
+        "type": "JO-DA",
+        "instance": "JO-DA_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 539978,
+        "type": "JO-DA",
+        "instance": "JO-DA_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 818095421,
+        "type": "JO-DA",
+        "instance": "JO-DA_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 931570,
+        "type": "JO-DA",
+        "instance": "JO-DA_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 230852,
+        "type": "JO-DP",
+        "instance": "JO-DP_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 252889,
+        "type": "JO-DP",
+        "instance": "JO-DP_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 568032,
+        "type": "JO-DP",
+        "instance": "JO-DP_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 241065,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 325429,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 330394,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 531019,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 83648,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 90773,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 101240,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 112427,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 112824,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 382609,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 524140,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 533713,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 713207029,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 908412467,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 235763,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 425614,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 515363,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 251085475,
+        "type": "JO-ED1",
+        "instance": "JO-ED1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 241662,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 277760,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 900950,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 572394633,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 758504623,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 49513,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 85904,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 100487,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 115392,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 118191,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 133748,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 148451,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 181666,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 190501,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 207190,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 215110,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 252053,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 522304,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 530572,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 534097,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 919830,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 286384065,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 767138051,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 724444081,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 745668454,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 235503501,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 27139,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 433407,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 107124542,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 339608709,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 512632,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 519174,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 923831,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 934617,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 257580215,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 769661594,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 994082949,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 514024,
+        "type": "JO-ED2_a",
+        "instance": "JO-ED2_a_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 82928,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 98485,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 104113,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 243520,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 515513,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 515514,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 256622,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 68750,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 515512,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 929401,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 64293,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 512630,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 530462,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 929247,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 174217,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 514083,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 516606,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 530838,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 921745,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 514084,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 562509,
+        "type": "JO-ED2_b",
+        "instance": "JO-ED2_b_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 42121,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 159517,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 320740,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 51029,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 82178,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 126859,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 210632,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 518887,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 559555,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 837585830,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 244217,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 727839014,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 1015296890,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 200535,
+        "type": "JO-ED2_c",
+        "instance": "JO-ED2_c_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 117698,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 426515,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 467266335,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 33970,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 34388,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 55759,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 74384,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 77969,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 79237,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 80492,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 81376,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 87594,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 89103,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 98638,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 111529,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 119378,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 123879,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 126081,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 156929,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 162684,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 169407,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 219501,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 260581,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 265416,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 276829,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 301867,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 324669,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 325276,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 495313,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 531021,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 918248,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 483594,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 377495,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 512226,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 206174566,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 493774068,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 545702226,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 849226085,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 850213452,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 417419,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 222873418,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 126689,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 259400,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 321272,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 430178,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 536218,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 561160,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 480555286,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 530461,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 142847993,
+        "type": "JO-EV1",
+        "instance": "JO-EV1_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 104465393,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 35332,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 71352,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 77370,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 89017,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 93383,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 97025,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 138403,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 147029,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 155912,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 163625,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 194348,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 238938,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 366857,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 433834,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 929909,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 139925399,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 195470070,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 821484380,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 912272687,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 327202,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 487107,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 273974394,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 376040,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 226996233,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 308077970,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 480601747,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 993248402,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 875638914,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 536217,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 918039,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 448449,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 494022,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 512237,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 516907,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 519307,
+        "type": "JO-EV2",
+        "instance": "JO-EV2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 38727,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 73005,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 75970,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 77273,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 95144,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 98583,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 113345,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 176004,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 529072,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 531712,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 557828,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 79513,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 128729,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 208968,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 491302,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 529073,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 532627,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 859985596,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 62868,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 92035,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 60534,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 86133,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 593749891,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 545973,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 545974,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 562811,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 923453,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 77185,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 95994,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 512631,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 562806,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 145088940,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 432633950,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 701436290,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 1017704104,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 93165,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 293125,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 516604,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 516605,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 530842,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 196804,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 530841,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 514568,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 131817457,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 122731,
+        "type": "JO-EV3",
+        "instance": "JO-EV3_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 130622,
+        "type": "JO-EV4",
+        "instance": "JO-EV4_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 1004833528,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 126511,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 217036,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 101279,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 101548,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 101797,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 107672,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 345335,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 513223,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 930621,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 86281,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 96418,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 529105,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 573860058,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 617505194,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 922113,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 789003564,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 881191049,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 785980083,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 407821,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 327126875,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 419654997,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 523980024,
+        "type": "JO-EV5",
+        "instance": "JO-EV5_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 900949,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 32912,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 66302,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 94723,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 119531,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 126654,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 275117,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 534098,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 263851661,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 341173407,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 67186,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 145198,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 218203,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 142804,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 901811,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 242202,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 189216879,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 211443,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 520630,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 975394666,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 399935690,
+        "type": "JO-EV6",
+        "instance": "JO-EV6_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 188780,
+        "type": "JO-FD2",
+        "instance": "JO-FD2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 200259,
+        "type": "JO-FD2",
+        "instance": "JO-FD2_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 224061,
+        "type": "JO-FD2",
+        "instance": "JO-FD2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 268351,
+        "type": "JO-FD2",
+        "instance": "JO-FD2_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 627794952,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 363027,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 413003,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 920330,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 176066484,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 944434730,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 102456926,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 306607,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 839090650,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 565848,
+        "type": "JO-FV",
+        "instance": "JO-FV_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 142423,
+        "type": "JO-mz",
+        "instance": "JO-mz_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 151525,
+        "type": "JO-mz",
+        "instance": "JO-mz_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 92045,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 214463,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 110463,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 168985,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_L",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 341661,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 281017,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 356908,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 360579,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 462482,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 276340622,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 297907170,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 315136169,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 347648851,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 348970414,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 401966116,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 567887507,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 617261572,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 616359945,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 631826146,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 650169251,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 695941051,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 856796036,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 835949054,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 898227417,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 911172847,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 985068924,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 1003164788,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 125446087,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 378732,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 416552,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 735726559,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 702682768,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 925945873,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 1004101664,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 333565,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 394318,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 311389836,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 396012065,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 785169039,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 852693854,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 865642428,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 871118340,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 321241,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 255964,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 301305,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 377394,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 415959,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 439338,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 453447,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 954304,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 102730610,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 102829180,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 165307335,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 182055376,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 187467801,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 190960183,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 229159256,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 237125523,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 267864463,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 325721459,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 345369828,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 387136270,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 407382048,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 482981517,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 528648152,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 608346676,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 635361007,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 675422459,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 710268570,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 893816063,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 933869224,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 999210425,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": null,
+        "side": null
+      },
+      {
+        "bodyId": 237273,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 433400,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 552400,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 331344108,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 719581118,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 285504310,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 277619,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 310422,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 398462,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 406920,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 941989,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 324769133,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 692373758,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 902338,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 397089,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 473437,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 924040,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 930236,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 203988386,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 373925118,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 821578166,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 827993838,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 1039063503,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      },
+      {
+        "bodyId": 842715518,
+        "type": "JO-unclear",
+        "instance": "JO-unclear_R",
+        "neurotransmitter": "acetylcholine",
+        "side": null
+      }
+    ],
+    "giant_fiber": [
+      {
+        "bodyId": 10010,
+        "type": "DNp01",
+        "instance": "DNp01(GF)_L",
+        "neurotransmitter": "acetylcholine",
+        "side": "L"
+      },
+      {
+        "bodyId": 10001,
+        "type": "DNp01",
+        "instance": "DNp01(GF)_R",
+        "neurotransmitter": "acetylcholine",
+        "side": "R"
+      }
+    ],
+    "motor": [
+      {
+        "bodyId": 802552,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_L",
+        "neurotransmitter": "unclear",
+        "side": "L"
+      },
+      {
+        "bodyId": 804514,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_L",
+        "neurotransmitter": "unclear",
+        "side": "L"
+      },
+      {
+        "bodyId": 813755,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_L",
+        "neurotransmitter": "unclear",
+        "side": "L"
+      },
+      {
+        "bodyId": 803237,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_L",
+        "neurotransmitter": "unclear",
+        "side": "L"
+      },
+      {
+        "bodyId": 805741,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_L",
+        "neurotransmitter": "unclear",
+        "side": "L"
+      },
+      {
+        "bodyId": 804465,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_L",
+        "neurotransmitter": "unclear",
+        "side": "L"
+      },
+      {
+        "bodyId": 804866,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_R",
+        "neurotransmitter": "unclear",
+        "side": "R"
+      },
+      {
+        "bodyId": 817347,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_R",
+        "neurotransmitter": "unclear",
+        "side": "R"
+      },
+      {
+        "bodyId": 924716,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_R",
+        "neurotransmitter": "unclear",
+        "side": "R"
+      },
+      {
+        "bodyId": 806204,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_R",
+        "neurotransmitter": "unclear",
+        "side": "R"
+      },
+      {
+        "bodyId": 905849,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_R",
+        "neurotransmitter": "unclear",
+        "side": "R"
+      },
+      {
+        "bodyId": 909521,
+        "type": "Tergotr. MN",
+        "instance": "Tergotr. MN_R",
+        "neurotransmitter": "unclear",
+        "side": "R"
+      }
+    ]
+  },
+  "connections": {
+    "sensory_to_gf": [
+      {
+        "from_bodyId": 519458,
+        "from_instance": "JO-B1_a_R",
+        "to_bodyId": 10001,
+        "to_instance": "DNp01(GF)_R",
+        "weight": 4
+      },
+      {
+        "from_bodyId": 536998,
+        "from_instance": "JO-B1_c_R",
+        "to_bodyId": 10001,
+        "to_instance": "DNp01(GF)_R",
+        "weight": 2
+      }
+    ],
+    "gf_to_motor": []
+  },
+  "fallback_partners": {
+    "upstream": [
+      {
+        "partner_type": "LC4",
+        "superclass": "visual_projection",
+        "class": "",
+        "weight": 6362,
+        "connections": 126
+      },
+      {
+        "partner_type": "LPLC2",
+        "superclass": "visual_projection",
+        "class": "",
+        "weight": 4862,
+        "connections": 185
+      },
+      {
+        "partner_type": "DNp70",
+        "superclass": "descending_neuron",
+        "class": "",
+        "weight": 1416,
+        "connections": 4
+      },
+      {
+        "partner_type": "PVLP122",
+        "superclass": "cb_intrinsic",
+        "class": "",
+        "weight": 1216,
+        "connections": 11
+      },
+      {
+        "partner_type": "SAD064",
+        "superclass": "cb_intrinsic",
+        "class": "",
+        "weight": 1215,
+        "connections": 6
+      },
+      {
+        "partner_type": "SAD073",
+        "superclass": "cb_intrinsic",
+        "class": "",
+        "weight": 1177,
+        "connections": 8
+      },
+      {
+        "partner_type": "PVLP010",
+        "superclass": "cb_intrinsic",
+        "class": "",
+        "weight": 711,
+        "connections": 2
+      },
+      {
+        "partner_type": "PVLP123",
+        "superclass": "cb_intrinsic",
+        "class": "",
+        "weight": 620,
+        "connections": 16
+      },
+      {
+        "partner_type": "PVLP151",
+        "superclass": "cb_intrinsic",
+        "class": "",
+        "weight": 603,
+        "connections": 8
+      },
+      {
+        "partner_type": "CL038",
+        "superclass": "cb_intrinsic",
+        "class": "",
+        "weight": 549,
+        "connections": 4
+      },
+      {
+        "partner_type": "JO-B1_a",
+        "superclass": "cb_sensory",
+        "class": "mechanosensory",
+        "weight": 545,
+        "connections": 14
+      },
+      {
+        "partner_type": "CL367",
+        "superclass": "cb_intrinsic",
+        "class": "",
+        "weight": 537,
+        "connections": 4
+      }
+    ],
+    "downstream": [
+      {
+        "partner_type": "GFC2",
+        "superclass": "vnc_intrinsic",
+        "class": "",
+        "weight": 144,
+        "connections": 12
+      },
+      {
+        "partner_type": "GFC4",
+        "superclass": "vnc_intrinsic",
+        "class": "",
+        "weight": 112,
+        "connections": 14
+      },
+      {
+        "partner_type": "DNp11",
+        "superclass": "descending_neuron",
+        "class": "",
+        "weight": 107,
+        "connections": 3
+      },
+      {
+        "partner_type": "IN06B008",
+        "superclass": "vnc_intrinsic",
+        "class": "",
+        "weight": 101,
+        "connections": 8
+      },
+      {
+        "partner_type": "GFC3",
+        "superclass": "vnc_intrinsic",
+        "class": "",
+        "weight": 97,
+        "connections": 19
+      },
+      {
+        "partner_type": "TTMn",
+        "superclass": "vnc_motor",
+        "class": "",
+        "weight": 90,
+        "connections": 2
+      },
+      {
+        "partner_type": "IN18B034",
+        "superclass": "vnc_intrinsic",
+        "class": "",
+        "weight": 75,
+        "connections": 4
+      },
+      {
+        "partner_type": "AN18B053",
+        "superclass": "ascending_neuron",
+        "class": "",
+        "weight": 67,
+        "connections": 9
+      },
+      {
+        "partner_type": "IN11A001",
+        "superclass": "vnc_intrinsic",
+        "class": "",
+        "weight": 65,
+        "connections": 4
+      },
+      {
+        "partner_type": "AN19A018",
+        "superclass": "ascending_neuron",
+        "class": "",
+        "weight": 62,
+        "connections": 9
+      },
+      {
+        "partner_type": "AN08B098",
+        "superclass": "ascending_neuron",
+        "class": "",
+        "weight": 56,
+        "connections": 15
+      },
+      {
+        "partner_type": "IN08B003",
+        "superclass": "vnc_intrinsic",
+        "class": "",
+        "weight": 50,
+        "connections": 3
+      }
+    ]
+  },
+  "warnings": [
+    "sensory_to_gf: only 2 connection(s) / total weight 6 - below the 10 threshold, treat this link as ABSENT.",
+    "gf_to_motor: only 0 connection(s) / total weight 0 - below the 10 threshold, treat this link as ABSENT.",
+    "An intermediate neuron is probably needed: see fallback_partners."
+  ]
+}
