@@ -1,4 +1,6 @@
 neuprint-python
 python-dotenv
 pandas
-truststore   # usa el almacen de certificados de Windows (Norton intercepta HTTPS aqui)
+truststore   # use the Windows certificate store (Norton intercepts HTTPS on this machine)
+brian2
+matplotlib

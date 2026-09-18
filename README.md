@@ -1,17 +1,35 @@
 # flyTest
 
-Conectoma real de *Drosophila* (**MaleCNS v1.0**, via [neuPrint](https://neuprint.janelia.org))
-para, mas adelante, mover una mosca simulada.
+Driving a simulated fly with a **real connectome**: the MaleCNS v1.0 reconstruction of the
+*Drosophila* nervous system, queried live through [neuPrint](https://neuprint.janelia.org).
 
-Comportamiento objetivo: **geotaxis negativa** — tras un golpe, la mosca trepa hacia arriba.
+Target behaviour: the **escape reflex**. Something looms, the fly jumps. Modelled as a
+Sisyphus loop — startle, jump up, gravity pulls it down, startle again.
 
-## Estado
+## The circuit
 
-| Paso | Que es | Estado |
+Every neuron and every connection weight below comes from the connectome, not from
+guesswork. The chain was validated against the data before a single neuron was simulated.
+
+```
+LC4_L + LPLC2_L   ->   DNp01_L (Giant Fiber)   ->   TTMn_L   ->   jump
+165 looming            1 command neuron             1 motor neuron
+detector neurons       (bodyId 10010)               (bodyId 804642)
+```
+
+## Steps
+
+| Step | What it does | Output |
 |---|---|---|
-| 0 | `explore_circuit.py` — buscar si existe un circuito pequeno e identificable | hecho -> [`circuit_candidates.md`](circuit_candidates.md) |
-| 1 | Conectividad del circuito elegido | pendiente |
-| 2 | Simulacion de neuronas spiking | pendiente |
+| 0 | `explore_circuit.py` — is there a small, identifiable circuit at all? | [`circuit_candidates.md`](circuit_candidates.md) |
+| 1 | `fetch_circuit_connectivity.py` — test the first hypothesis | [`circuit_connectivity.json`](circuit_connectivity.json) |
+| 1b | `fetch_corrected_circuit.py` — the corrected circuit | [`circuit_connectivity_v2.json`](circuit_connectivity_v2.json) |
+| 2 | `simulate_circuit.py` — spiking simulation in Brian2 | `escape_circuit_test.png` |
+
+Step 1 is kept on purpose: it is the step where the connectome rejected the original guess.
+The gravity-sensing neurons barely touch the Giant Fiber (weights of 2 and 4, i.e. noise),
+and the motor neuron picked from its name turned out to be a walking neuron, not the jump
+one. The real trigger is visual looming, and the real output is TTMn.
 
 ## Setup
 
@@ -21,19 +39,18 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-Copia `.env.example` a `.env` y pon tu token de neuPrint (Account -> Auth Token en la web).
-`.env` esta en `.gitignore`: el token nunca se sube.
+Copy `.env.example` to `.env` and paste your neuPrint token (Account -> Auth Token on the
+website). `.env` is gitignored, so the token never leaves the machine.
 
 ```bash
-python explore_circuit.py
+python explore_circuit.py          # step 0
+python fetch_corrected_circuit.py  # step 1b, refreshes the connectivity JSON
+python simulate_circuit.py         # step 2, runs the simulation and writes the raster plot
 ```
 
-Imprime los datasets disponibles, resume los candidatos por consola y regenera
-`circuit_candidates.md`.
+### Windows / Norton note
 
-### Nota Windows/Norton
-
-Norton intercepta HTTPS en esta maquina, asi que `pip` y `requests` fallan con
-`CERTIFICATE_VERIFY_FAILED`. El script llama a `truststore.inject_into_ssl()` para usar el
-almacen de certificados de Windows. Si `pip install` falla, exporta el almacen a un PEM y
-usa `PIP_CERT=<ruta al pem>`.
+Norton intercepts HTTPS on this machine, so `pip` and `requests` fail with
+`CERTIFICATE_VERIFY_FAILED`. The scripts call `truststore.inject_into_ssl()` to use the
+Windows certificate store instead. If `pip install` fails, export that store to a PEM file
+and point `PIP_CERT` at it.
