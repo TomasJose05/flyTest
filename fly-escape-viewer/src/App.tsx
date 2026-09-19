@@ -2,19 +2,17 @@ import { useState } from "react";
 import { SCENARIOS, type ScenarioKey } from "./types";
 import { useScenarioPlayback } from "./useScenarioPlayback";
 import { DebugView } from "./components/DebugView";
+import { Timeline } from "./components/Timeline";
 import { FlyScene } from "./scene/FlyScene";
 import "./App.css";
 
-type ViewMode = "scene" | "debug";
-
 export default function App() {
   const [scenarioKey, setScenarioKey] = useState<ScenarioKey>("medium_approach");
-  const [view, setView] = useState<ViewMode>("scene");
-  // The myth is a loop, so the scene replays forever by default. The debug view is easier to
-  // read frozen on its final frame, so the switch is here for both to share.
+  // The myth is a loop, so the scene replays forever by default.
   const [loop, setLoop] = useState(true);
 
-  // ONE clock, ONE copy of the data, shared by both views. See useScenarioPlayback.
+  // ONE clock, ONE copy of the data, shared by BOTH panels below. See useScenarioPlayback.
+  // This is why the neurons and the boulder cannot drift apart: there is nothing to drift.
   const { data, error, totalMs, timeMs, isPlaying, play, pause, reset } =
     useScenarioPlayback(scenarioKey, loop);
 
@@ -40,20 +38,6 @@ export default function App() {
             <span className="muted">{s.hint}</span>
           </button>
         ))}
-        <div className="view-toggle">
-          <button
-            className={view === "scene" ? "is-active" : ""}
-            onClick={() => setView("scene")}
-          >
-            3D scene
-          </button>
-          <button
-            className={view === "debug" ? "is-active" : ""}
-            onClick={() => setView("debug")}
-          >
-            Debug data
-          </button>
-        </div>
       </nav>
 
       {error && (
@@ -65,6 +49,8 @@ export default function App() {
 
       {data && (
         <>
+          {/* One set of controls and one timeline, both spanning the full width: they drive
+              the scene and the neuron panel at the same time because there is only one clock. */}
           <section className="transport">
             <button className="primary" onClick={isPlaying ? pause : play}>
               {isPlaying ? "Pause" : timeMs >= totalMs ? "Replay" : "Play"}
@@ -82,8 +68,11 @@ export default function App() {
             <span className="muted">of {totalMs} ms</span>
           </section>
 
-          {view === "scene" ? (
-            <>
+          <Timeline data={data} timeMs={timeMs} totalMs={totalMs} />
+
+          {/* Left: what the fly does. Right: why it does it. Same millisecond, both sides. */}
+          <div className="workspace">
+            <div className="workspace-scene">
               <FlyScene data={data} timeMs={timeMs} />
               <p className="muted scene-note">
                 The boulder falls over the full {data.ramp_duration_ms} ms ramp.{" "}
@@ -92,10 +81,11 @@ export default function App() {
                   : `The fly leaves the ground at ${data.giant_fiber_spike_ms} ms, the exact
                      moment DNp01 spiked in the simulation.`}
               </p>
-            </>
-          ) : (
-            <DebugView data={data} timeMs={timeMs} totalMs={totalMs} />
-          )}
+            </div>
+            <div className="workspace-data">
+              <DebugView data={data} timeMs={timeMs} />
+            </div>
+          </div>
         </>
       )}
     </main>

@@ -147,15 +147,27 @@ h2 {
 }
 
 /* ---- panels ---- */
-.stages {
+/* Two panels, side by side: the scene gets the room, the data panel a fixed column.
+   Below ~1000px they simply stack, so nothing is ever squeezed unreadably. */
+.workspace {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+  align-items: start;
 }
-@media (min-width: 760px) {
-  .stages {
-    grid-template-columns: 1fr 240px 240px;
+@media (min-width: 1000px) {
+  .workspace {
+    grid-template-columns: minmax(0, 1.35fr) minmax(360px, 1fr);
   }
+}
+.workspace-data {
+  display: grid;
+  gap: 16px;
+}
+.indicator-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 .panel {
   border: 1px solid var(--line);
@@ -177,8 +189,8 @@ h2 {
   gap: 4px;
 }
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background: #232a33;
   transition: background 0.12s linear, box-shadow 0.12s linear;
@@ -196,8 +208,8 @@ h2 {
   align-items: center;
 }
 .indicator {
-  width: 96px;
-  height: 96px;
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
   background: #232a33;
   border: 2px solid var(--line);
@@ -237,27 +249,6 @@ h2 {
 }
 
 /* ---- view toggle + 3D scene ---- */
-.view-toggle {
-  display: flex;
-  margin-left: auto;
-  align-self: center;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.view-toggle button {
-  padding: 10px 16px;
-  border: 0;
-  background: var(--panel);
-  color: var(--muted);
-  cursor: pointer;
-  font: inherit;
-}
-.view-toggle button.is-active {
-  background: #262c35;
-  color: var(--text);
-  font-weight: 600;
-}
 .loop-toggle {
   display: flex;
   align-items: center;
@@ -267,7 +258,7 @@ h2 {
   user-select: none;
 }
 .scene-canvas {
-  height: 420px;
+  height: 460px;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: linear-gradient(#141920, #0d1116);
