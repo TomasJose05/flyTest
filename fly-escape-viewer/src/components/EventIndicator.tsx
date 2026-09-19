@@ -25,6 +25,10 @@ export function EventIndicator({
   holdMs = 250,
   tone,
 }: Props) {
+  // Which stage of the circuit this card is. The signal really does travel 1 -> 2 -> 3, so
+  // the numbering is information, not decoration.
+  const channel = tone === "decision" ? ["2", "command"] : ["3", "motor"];
+
   // `== null` with two equals signs, not three, and deliberately so: it is true for BOTH
   // null and undefined. The exporter always writes the key, so today it is always null or a
   // number - but if a future JSON ever dropped the key, `=== null` would be false, the
@@ -45,6 +49,9 @@ export function EventIndicator({
   return (
     <section className="panel indicator-panel">
       <header className="panel-head">
+        <span className="eyebrow">
+          <b>CH {channel[0]}</b> &middot; {channel[1]}
+        </span>
         <h2>{title}</h2>
         <span className="muted">{subtitle}</span>
       </header>

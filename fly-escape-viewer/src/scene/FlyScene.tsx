@@ -75,30 +75,30 @@ function Fly({ groupRef }: { groupRef: React.RefObject<Group | null> }) {
       {/* body */}
       <mesh castShadow>
         <sphereGeometry args={[0.42, 24, 18]} />
-        <meshStandardMaterial color="#3f4a5a" roughness={0.45} />
+        <meshStandardMaterial color="#3b4854" roughness={0.5} />
       </mesh>
       {/* head, pushed forward along +X */}
-      <mesh position={[0.46, 0.1, 0]}>
+      <mesh position={[0.46, 0.1, 0]} castShadow>
         <sphereGeometry args={[0.26, 20, 16]} />
-        <meshStandardMaterial color="#333c49" roughness={0.45} />
+        <meshStandardMaterial color="#323d49" roughness={0.5} />
       </mesh>
       {/* the two big red eyes */}
       <mesh position={[0.6, 0.18, 0.15]}>
         <sphereGeometry args={[0.13, 16, 12]} />
-        <meshStandardMaterial color="#c0392b" roughness={0.3} />
+        <meshStandardMaterial color="#48e2a0" roughness={0.35} />
       </mesh>
       <mesh position={[0.6, 0.18, -0.15]}>
         <sphereGeometry args={[0.13, 16, 12]} />
-        <meshStandardMaterial color="#c0392b" roughness={0.3} />
+        <meshStandardMaterial color="#48e2a0" roughness={0.35} />
       </mesh>
       {/* wings: very flat boxes, tilted up and back. transparent so they read as wings */}
       <mesh position={[-0.15, 0.32, 0.28]} rotation={[0.35, 0, 0.22]}>
         <boxGeometry args={[0.8, 0.02, 0.36]} />
-        <meshStandardMaterial color="#9fb6d0" transparent opacity={0.45} />
+        <meshStandardMaterial color="#7f95ad" transparent opacity={0.35} />
       </mesh>
       <mesh position={[-0.15, 0.32, -0.28]} rotation={[-0.35, 0, 0.22]}>
         <boxGeometry args={[0.8, 0.02, 0.36]} />
-        <meshStandardMaterial color="#9fb6d0" transparent opacity={0.45} />
+        <meshStandardMaterial color="#7f95ad" transparent opacity={0.35} />
       </mesh>
       {/* legs: thin cylinders. cylinderGeometry stands up the Y axis by default, so each
           one is rotated outwards a little to splay the feet. */}
@@ -110,11 +110,11 @@ function Fly({ groupRef }: { groupRef: React.RefObject<Group | null> }) {
         <group key={i}>
           <mesh position={[x, -0.33, 0.2]} rotation={[tilt, 0, 0.25]}>
             <cylinderGeometry args={[0.03, 0.03, 0.42, 8]} />
-            <meshStandardMaterial color="#232a33" />
+            <meshStandardMaterial color="#1e262f" />
           </mesh>
           <mesh position={[x, -0.33, -0.2]} rotation={[-tilt, 0, 0.25]}>
             <cylinderGeometry args={[0.03, 0.03, 0.42, 8]} />
-            <meshStandardMaterial color="#232a33" />
+            <meshStandardMaterial color="#1e262f" />
           </mesh>
         </group>
       ))}
@@ -181,9 +181,9 @@ function Animated({ data, timeMs }: Props) {
       <Fly groupRef={flyRef} />
       {/* icosahedronGeometry with detail 0 is a 20-sided solid: chunky facets that read as
           rock. flatShading keeps each face flat instead of smoothing it into a ball. */}
-      <mesh ref={boulderRef} position={[0, BOULDER_TOP_Y, 0]}>
+      <mesh ref={boulderRef} position={[0, BOULDER_TOP_Y, 0]} castShadow>
         <icosahedronGeometry args={[BOULDER_RADIUS, 0]} />
-        <meshStandardMaterial color="#6b6259" roughness={0.95} flatShading />
+        <meshStandardMaterial color="#b5563a" roughness={0.92} flatShading />
       </mesh>
     </>
   );
@@ -219,15 +219,26 @@ export function FlyScene({ data, timeMs }: Props) {
         the interesting band (ground up to the falling boulder) into the middle of frame -
         easier than aiming the camera. `zoom` is how many pixels one world unit takes up.
       */}
-      <Canvas orthographic camera={{ position: [0, 0, 20], zoom: 46, near: 0.1, far: 100 }}>
+      <Canvas shadows orthographic camera={{ position: [0, 0, 20], zoom: 46, near: 0.1, far: 100 }}>
         {/* the world band we always want visible: ground at y=0 up to the boulder at 8.5,
             plus a little air */}
         <FitCamera worldHeight={9.4} />
         {/* Lights. meshStandardMaterial is invisible without them: ambient fills everything
             evenly, the directional light comes from one side and creates the shading. */}
-        <ambientLight intensity={0.55} />
-        <directionalLight position={[4, 8, 6]} intensity={1.6} />
-        <directionalLight position={[-6, 3, -4]} intensity={0.4} color="#88aaff" />
+        {/* Ambient fills the shadows so nothing goes pure black; one directional light
+            plays the part of a lamp over the rig and casts the contact shadow. Neither one
+            reacts to events - the lighting is scenery, the data is the animation. */}
+        <ambientLight intensity={0.6} />
+        <directionalLight
+          position={[5, 9, 6]}
+          intensity={1.5}
+          castShadow
+          shadow-mapSize={[1024, 1024]}
+          shadow-camera-left={-12}
+          shadow-camera-right={12}
+          shadow-camera-top={12}
+          shadow-camera-bottom={-12}
+        />
 
         {/* The camera looks at the origin, so we slide the whole scene DOWN until the band
             we care about - ground at y=0 up to the boulder's start at y=8.5 - straddles it.
@@ -235,9 +246,9 @@ export function FlyScene({ data, timeMs }: Props) {
         <group position={[-0.9, -4.05, 0]}>
           <Animated data={data} timeMs={timeMs} />
           {/* the ground: a very flat box, wide enough to fill the frame */}
-          <mesh position={[0, -0.15, 0]}>
+          <mesh position={[0, -0.15, 0]} receiveShadow>
             <boxGeometry args={[30, 0.3, 6]} />
-            <meshStandardMaterial color="#20262e" roughness={1} />
+            <meshStandardMaterial color="#18222b" roughness={1} />
           </mesh>
         </group>
       </Canvas>

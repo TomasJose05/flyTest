@@ -36,6 +36,9 @@ export function SensoryRaster({ data, timeMs }: Props) {
   return (
     <section className="panel">
       <header className="panel-head">
+        <span className="eyebrow">
+          <b>CH 1</b> &middot; vision
+        </span>
         <h2>Visual neurons</h2>
         <span className="muted">
           LC4_L + LPLC2_L &middot; {data.total_sensory_neurons} cells &middot;{" "}
