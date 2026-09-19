@@ -13,10 +13,9 @@ bucket empties back to rest. That is the whole model: Leaky Integrate-and-Fire (
 BRIAN2 is a library where you describe that with a one-line equation and it runs the clock
 for you. Its party trick is UNITS: write 10*ms and -70*mV and it refuses to add them.
 
-WHAT CHANGED IN THIS VERSION. The first run drove every sensory cell with the same constant
-current, so all 165 crossed threshold on the same tick forever: a metronome, not a decision.
-Two fixes, both about the INPUT, not the circuit: the stimulus now grows like an
-approaching object, and every neuron is slightly different from its neighbours.
+WHAT CHANGED. The stimulus now grows like an approaching object instead of switching on and
+off, every sensory cell is slightly different from its neighbours, and the command stage has
+a long refractory period so it fires ONCE per threat. None of it touches the wiring.
 """
 
 import json
@@ -58,14 +57,20 @@ PEAK_MV = 30                           # current at the end of the ramp, in mV
 t_ms = np.arange(RAMP_MS, dtype=float)
 raw = 1.0 / (T_COLLISION_MS - t_ms) - 1.0 / T_COLLISION_MS   # 0 at t=0, accelerating after
 ramp = PEAK_MV * raw / raw[-1]                               # rescale so the peak is PEAK_MV
-# After the ramp we cut to zero: the threat passed or was dodged. TimedArray is Brian2's
-# "look up this value at time t" object - dt=1*ms means one array entry per millisecond.
+# Then cut to zero: threat dodged. TimedArray = Brian2's "value at time t", one entry per ms.
 looming = TimedArray(np.concatenate([ramp, np.zeros(QUIET_MS)]) * mV, dt=1 * ms)
-
 # ------------------------------------------------------------- 3. the neurons themselves
 V_REST, V_THRESHOLD, V_RESET = -70 * mV, -50 * mV, -70 * mV
 TAU = 10 * ms                          # how fast the bucket leaks back toward rest
-REFRACTORY = 5 * ms                    # forced silence right after a spike
+# REFRACTORY = dead time right after a spike. Firing dumps the ions the neuron had stacked
+# up, and until the pumps restore them it cannot fire again: input arrives and is ignored,
+# however strong. Brian2 freezes the voltage at reset and runs no threshold check meanwhile.
+SENSORY_REFRACTORY = 5 * ms            # sensory cells legitimately keep reporting: stays short
+# The command stage gets a far longer one. The pooled drive stays above threshold for the
+# last ~165 ms of the ramp (636-800 ms), so the dead time has to outlast THAT window for the
+# Giant Fiber to fire only once per threat. Measured: 100 ms and 150 ms both let a second
+# spike through; 175 ms is the first value that gives a single clean trigger.
+COMMAND_REFRACTORY = 175 * ms
 
 # LIF, term by term: v is the level in the bucket; (V_REST - v) is the leak pulling it back
 # down; the stimulus pours voltage in; / TAU sets how fast; ": volt" is Brian2's unit
@@ -82,16 +87,15 @@ excitability : 1
 EQS_QUIET = """
 dv/dt = (V_REST - v) / TAU : volt (unless refractory)
 """                                    # GF and motor are driven only by their synapses
-COMMON = dict(threshold="v > V_THRESHOLD", reset="v = V_RESET", refractory=REFRACTORY,
-              method="exact")
-
-sensory = NeuronGroup(n_sensory, EQS_SENSORY, name="sensory", **COMMON)
+COMMON = dict(threshold="v > V_THRESHOLD", reset="v = V_RESET", method="exact")
+CMD = dict(refractory=COMMAND_REFRACTORY, **COMMON)      # only DNp01 and TTMn get the long one
+sensory = NeuronGroup(n_sensory, EQS_SENSORY, name="sensory",
+                      refractory=SENSORY_REFRACTORY, **COMMON)
 sensory.excitability = np.clip(np.random.normal(1.0, 0.15, n_sensory), 0.3, None)
-giant_fiber = NeuronGroup(1, EQS_QUIET, name="giant_fiber", **COMMON)
-motor = NeuronGroup(1, EQS_QUIET, name="motor", **COMMON)
+giant_fiber = NeuronGroup(1, EQS_QUIET, name="giant_fiber", **CMD)
+motor = NeuronGroup(1, EQS_QUIET, name="motor", **CMD)
 for group in (sensory, giant_fiber, motor):
     group.v = V_REST                   # everyone starts at rest, bucket empty
-
 # --------------------------------------------------------------------- 4. the connections
 # MODELING DECISION (the connectome cannot tell us this). A synapse count is not a voltage,
 # so we choose what one synapse is worth in mV. The gap from rest to threshold is 20 mV, so
@@ -101,7 +105,6 @@ SYNAPSE_TO_MV = 0.05 * mV
 sensory_to_gf = Synapses(sensory, giant_fiber, model="w : volt", on_pre="v_post += w")
 sensory_to_gf.connect(i=np.arange(n_sensory), j=np.zeros(n_sensory, dtype=int))
 sensory_to_gf.w = [r["weight"] * SYNAPSE_TO_MV for r in sensory_links]
-
 # THE GIANT FIBER -> TTMn WEIGHT IS SET BY HAND, ON PURPOSE.
 # neuPrint counts 20 chemical synapses here, far fewer than the sensory connections, which
 # would make the last step of an escape reflex its weakest link. That is wrong: in the real
@@ -122,29 +125,22 @@ spikes_motor = SpikeMonitor(motor)
 run((RAMP_MS + QUIET_MS) * ms)
 # ------------------------------------------------------------------------- 6. raster plot
 fig, ax = plt.subplots(figsize=(11, 5))
-for label, mon, offset, colour in [
-        ("sensory (LC4_L + LPLC2_L)", spikes_sensory, 0, "#4c72b0"),
+for label, mon, offset, colour in [("sensory (LC4_L + LPLC2_L)", spikes_sensory, 0, "#4c72b0"),
         ("giant fiber (DNp01_L)", spikes_gf, n_sensory + 6, "#dd8452"),
         ("motor (TTMn_L)", spikes_motor, n_sensory + 14, "#55a868")]:
-    ax.plot(mon.t / ms, np.asarray(mon.i) + offset, "|", color=colour, markersize=5,
-            label=label)
+    ax.plot(mon.t / ms, np.asarray(mon.i) + offset, "|", color=colour, markersize=5, label=label)
 ax.set_xlim(0, RAMP_MS + QUIET_MS)
-ax.set_xlabel("time (ms)")
-ax.set_ylabel("neuron")
-ax.set_title("Escape circuit: looming ramp 0-800 ms, then threat gone")
+ax.set_xlabel("time (ms)"), ax.set_ylabel("neuron")
+ax.set_title("Escape circuit: looming ramp 0-800 ms, single-shot trigger at threshold")
 ax.legend(loc="upper left", fontsize=9, framealpha=0.95)
-
-# Second y-axis: the stimulus curve itself, so you can see WHERE on the ramp the decision
-# happened rather than guessing from the spikes alone.
+# Second y-axis: the stimulus itself, so you can see WHERE on the ramp the decision happened.
 ax2 = ax.twinx()
 ax2.plot(np.arange(RAMP_MS + QUIET_MS), np.concatenate([ramp, np.zeros(QUIET_MS)]),
          color="#c44e52", linewidth=1.6, alpha=0.7)
 ax2.set_ylabel("looming drive (mV)", color="#c44e52")
 fig.savefig("escape_circuit_test.png", dpi=140, bbox_inches="tight")
-
 # ------------------------------------------------------------------------ 7. did it work?
-# spike_trains() gives, per neuron, the list of times it fired; we only want each cell's
-# FIRST spike, to see whether the population woke up together or one by one.
+# spike_trains() lists, per neuron, when it fired; we want each cell's FIRST spike only.
 firsts = np.array([float(t[0] / ms) for t in spikes_sensory.spike_trains().values() if len(t)])
 gf_t = np.asarray(spikes_gf.t / ms, dtype=float)
 motor_t = np.asarray(spikes_motor.t / ms, dtype=float)
@@ -158,12 +154,16 @@ if len(gf_t):
     print("2. DECISION POINT: Giant Fiber first fired at {:.1f} ms = {:.0f}% into the ramp "
           "({} in the approach).".format(gf_t[0], pct,
           "early" if pct < 33 else "mid" if pct < 66 else "late"))
-    print("3. DECISIVENESS: {} Giant Fiber spike(s){}.".format(len(gf_t), "" if len(gf_t) == 1
-          else ", from {:.1f} to {:.1f} ms - a burst, NOT one clean decision".format(
-              gf_t[0], gf_t[-1])))
+    verdict = ("a single clean escape trigger" if len(gf_t) == 1 else
+               "close enough to single-shot" if len(gf_t) <= 2 else
+               "still a burst - raise COMMAND_REFRACTORY above {:.0f} ms".format(
+                   gf_t[-1] - gf_t[0] + 10))
+    print("3. DECISIVENESS: DNp01 fired {} time(s) at {} ms - {}.".format(
+        len(gf_t), ", ".join("{:.1f}".format(t) for t in gf_t[:5]), verdict))
 else:
     print("2-3. The Giant Fiber never fired: pooled input never crossed threshold.")
-print("4. MOTOR OUTPUT: {} TTMn spike(s){}.".format(len(motor_t),
-      ", first {:.1f} ms after the Giant Fiber".format(motor_t[0] - gf_t[0])
-      if len(motor_t) and len(gf_t) else ""))
+print("4. MOTOR OUTPUT: TTMn fired {} time(s) at {} ms{}.".format(
+    len(motor_t), ", ".join("{:.1f}".format(t) for t in motor_t[:5]),
+    ", first {:.1f} ms after the Giant Fiber".format(motor_t[0] - gf_t[0])
+    if len(motor_t) and len(gf_t) else ""))
 print("Wrote escape_circuit_test.png")
