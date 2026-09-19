@@ -1,48 +1,22 @@
-import { useEffect, useState } from "react";
-import { SCENARIOS, type ScenarioData, type ScenarioKey } from "./types";
-import { useSimulationClock } from "./useSimulationClock";
-import { SensoryRaster } from "./components/SensoryRaster";
-import { EventIndicator } from "./components/EventIndicator";
-import { Timeline } from "./components/Timeline";
+import { useState } from "react";
+import { SCENARIOS, type ScenarioKey } from "./types";
+import { useScenarioPlayback } from "./useScenarioPlayback";
+import { DebugView } from "./components/DebugView";
+import { FlyScene } from "./scene/FlyScene";
 import "./App.css";
 
-/** The simulation keeps running for 200 ms after the ramp ends (the threat passes). */
-const TAIL_MS = 200;
+type ViewMode = "scene" | "debug";
 
 export default function App() {
   const [scenarioKey, setScenarioKey] = useState<ScenarioKey>("medium_approach");
-  const [data, setData] = useState<ScenarioData | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [view, setView] = useState<ViewMode>("scene");
+  // The myth is a loop, so the scene replays forever by default. The debug view is easier to
+  // read frozen on its final frame, so the switch is here for both to share.
+  const [loop, setLoop] = useState(true);
 
-  const totalMs = data ? data.ramp_duration_ms + TAIL_MS : 0;
-  const { timeMs, isPlaying, play, pause, reset } = useSimulationClock(totalMs);
-
-  // Load the chosen scenario from public/data/. These are static files served by Vite -
-  // there is no backend, and no neuroscience runs in the browser: Python already did it.
-  useEffect(() => {
-    let cancelled = false;
-    reset();
-    setData(null);
-    setError(null);
-
-    fetch(`${import.meta.env.BASE_URL}data/${scenarioKey}.json`)
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json() as Promise<ScenarioData>;
-      })
-      .then((json) => {
-        // `cancelled` guards against a slow response arriving after the user already
-        // clicked a different scenario, which would otherwise overwrite the newer data.
-        if (!cancelled) setData(json);
-      })
-      .catch((err: unknown) => {
-        if (!cancelled) setError(err instanceof Error ? err.message : String(err));
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [scenarioKey, reset]);
+  // ONE clock, ONE copy of the data, shared by both views. See useScenarioPlayback.
+  const { data, error, totalMs, timeMs, isPlaying, play, pause, reset } =
+    useScenarioPlayback(scenarioKey, loop);
 
   return (
     <main className="app">
@@ -51,7 +25,7 @@ export default function App() {
         <p className="muted">
           Spike times from a Brian2 simulation of a real <i>Drosophila</i> connectome:
           LC4/LPLC2 &rarr; DNp01 (Giant Fiber) &rarr; TTMn. Nothing here is animated by
-          hand - every flash is a recorded spike.
+          hand - the fly jumps because the Giant Fiber fired.
         </p>
       </header>
 
@@ -66,9 +40,27 @@ export default function App() {
             <span className="muted">{s.hint}</span>
           </button>
         ))}
+        <div className="view-toggle">
+          <button
+            className={view === "scene" ? "is-active" : ""}
+            onClick={() => setView("scene")}
+          >
+            3D scene
+          </button>
+          <button
+            className={view === "debug" ? "is-active" : ""}
+            onClick={() => setView("debug")}
+          >
+            Debug data
+          </button>
+        </div>
       </nav>
 
-      {error && <p className="error">Could not load {scenarioKey}.json: {error}</p>}
+      {error && (
+        <p className="error">
+          Could not load {scenarioKey}.json: {error}
+        </p>
+      )}
       {!data && !error && <p className="muted">Loading scenario...</p>}
 
       {data && (
@@ -78,29 +70,32 @@ export default function App() {
               {isPlaying ? "Pause" : timeMs >= totalMs ? "Replay" : "Play"}
             </button>
             <button onClick={reset}>Reset</button>
+            <label className="loop-toggle">
+              <input
+                type="checkbox"
+                checked={loop}
+                onChange={(e) => setLoop(e.target.checked)}
+              />
+              Loop
+            </label>
             <span className="clock">{timeMs.toFixed(1)} ms</span>
             <span className="muted">of {totalMs} ms</span>
           </section>
 
-          <Timeline data={data} timeMs={timeMs} totalMs={totalMs} />
-
-          <div className="stages">
-            <SensoryRaster data={data} timeMs={timeMs} />
-            <EventIndicator
-              title="Giant Fiber"
-              subtitle="DNp01_L &middot; the decision"
-              eventMs={data.giant_fiber_spike_ms}
-              timeMs={timeMs}
-              tone="decision"
-            />
-            <EventIndicator
-              title="Jump"
-              subtitle="TTMn_L &middot; the motor output"
-              eventMs={data.motor_spike_ms}
-              timeMs={timeMs}
-              tone="jump"
-            />
-          </div>
+          {view === "scene" ? (
+            <>
+              <FlyScene data={data} timeMs={timeMs} />
+              <p className="muted scene-note">
+                The boulder falls over the full {data.ramp_duration_ms} ms ramp.{" "}
+                {data.giant_fiber_spike_ms === null
+                  ? "In this scenario the Giant Fiber never fired, so the fly never moves."
+                  : `The fly leaves the ground at ${data.giant_fiber_spike_ms} ms, the exact
+                     moment DNp01 spiked in the simulation.`}
+              </p>
+            </>
+          ) : (
+            <DebugView data={data} timeMs={timeMs} totalMs={totalMs} />
+          )}
         </>
       )}
     </main>

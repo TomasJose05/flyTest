@@ -235,3 +235,45 @@ h2 {
   color: #e06c75;
   font-weight: 600;
 }
+
+/* ---- view toggle + 3D scene ---- */
+.view-toggle {
+  display: flex;
+  margin-left: auto;
+  align-self: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.view-toggle button {
+  padding: 10px 16px;
+  border: 0;
+  background: var(--panel);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+}
+.view-toggle button.is-active {
+  background: #262c35;
+  color: var(--text);
+  font-weight: 600;
+}
+.loop-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  user-select: none;
+}
+.scene-canvas {
+  height: 420px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: linear-gradient(#141920, #0d1116);
+  overflow: hidden;
+}
+.scene-note {
+  margin: 10px 2px 0;
+  max-width: 70ch;
+}

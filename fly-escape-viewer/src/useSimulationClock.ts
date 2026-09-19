@@ -32,7 +32,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
  * the other's frame while both keep scheduling - the clock then jumps backwards or freezes.
  * With locals, each loop owns its own bookkeeping and the `cancelled` flag stops it dead.
  */
-export function useSimulationClock(durationMs: number) {
+export function useSimulationClock(durationMs: number, loop = false) {
   const [timeMs, setTimeMs] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -46,8 +46,9 @@ export function useSimulationClock(durationMs: number) {
 
     let frame = 0;
     let cancelled = false;
-    const startedAt = performance.now(); // wall-clock moment this play began
-    const startOffset = elapsedRef.current; // simulated time already played
+    // `let`, not `const`: looping rewinds these two rather than restarting the effect.
+    let startedAt = performance.now(); // wall-clock moment this play began
+    let startOffset = elapsedRef.current; // simulated time already played
 
     const tick = (now: number) => {
       if (cancelled) return;
@@ -55,13 +56,21 @@ export function useSimulationClock(durationMs: number) {
       // rAF's timestamp belongs to the start of the frame, which can be a hair EARLIER than
       // the performance.now() we captured above - hence the clamp, or the first frame would
       // report a negative time.
-      const elapsed = Math.max(0, now - startedAt) + startOffset;
+      let elapsed = Math.max(0, now - startedAt) + startOffset;
 
       if (elapsed >= durationMs) {
-        elapsedRef.current = durationMs;
-        setTimeMs(durationMs);
-        setIsPlaying(false); // reached the end, stop on the last frame
-        return;
+        if (loop) {
+          // Straight back to the top without stopping: the threat comes round again, which
+          // is the whole point of the Sisyphus scene.
+          startedAt = now;
+          startOffset = 0;
+          elapsed = 0;
+        } else {
+          elapsedRef.current = durationMs;
+          setTimeMs(durationMs);
+          setIsPlaying(false); // reached the end, stop on the last frame
+          return;
+        }
       }
       elapsedRef.current = elapsed; // keep this current so Pause needs no extra work
       setTimeMs(elapsed);
@@ -74,7 +83,7 @@ export function useSimulationClock(durationMs: number) {
       cancelled = true;
       cancelAnimationFrame(frame);
     };
-  }, [isPlaying, durationMs]);
+  }, [isPlaying, durationMs, loop]);
 
   const play = useCallback(() => {
     // Pressing Play at the very end replays from the top rather than doing nothing.
