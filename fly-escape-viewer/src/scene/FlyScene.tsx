@@ -1,6 +1,6 @@
-import { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import type { Group, Mesh } from "three";
+import { useEffect, useRef } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import type { Group, Mesh, OrthographicCamera } from "three";
 import type { ScenarioData } from "../types";
 
 /**
@@ -189,6 +189,27 @@ function Animated({ data, timeMs }: Props) {
   );
 }
 
+/**
+ * Keeps the framing right when the canvas changes height.
+ *
+ * An orthographic camera's `zoom` is "how many pixels one world unit takes up", so a fixed
+ * zoom means a taller panel shows MORE of the world and a shorter one crops it - the
+ * boulder would slide out of frame on a small laptop. Dividing the panel's pixel height by
+ * the world height we want to see pins that band in place at any size.
+ *
+ * useThree is r3f's way of reaching the things the Canvas made for you: the camera, the
+ * renderer, the current size in pixels.
+ */
+function FitCamera({ worldHeight }: { worldHeight: number }) {
+  const camera = useThree((state) => state.camera) as OrthographicCamera;
+  const height = useThree((state) => state.size.height);
+  useEffect(() => {
+    camera.zoom = height / worldHeight;
+    camera.updateProjectionMatrix();
+  }, [camera, height, worldHeight]);
+  return null;
+}
+
 export function FlyScene({ data, timeMs }: Props) {
   return (
     <div className="scene-canvas">
@@ -199,6 +220,9 @@ export function FlyScene({ data, timeMs }: Props) {
         easier than aiming the camera. `zoom` is how many pixels one world unit takes up.
       */}
       <Canvas orthographic camera={{ position: [0, 0, 20], zoom: 46, near: 0.1, far: 100 }}>
+        {/* the world band we always want visible: ground at y=0 up to the boulder at 8.5,
+            plus a little air */}
+        <FitCamera worldHeight={9.4} />
         {/* Lights. meshStandardMaterial is invisible without them: ambient fills everything
             evenly, the directional light comes from one side and creates the shading. */}
         <ambientLight intensity={0.55} />
