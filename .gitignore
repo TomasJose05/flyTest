@@ -14,7 +14,7 @@ env/
 
 # Caches / data
 .cache/
-data/
+/data/                 # only the top-level scratch data dir, not public/data in the app
 *.log
 
 # OS / editor
@@ -22,3 +22,7 @@ data/
 Thumbs.db
 .vscode/
 .idea/
+
+# Node / frontend
+node_modules/
+dist/

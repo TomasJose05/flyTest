@@ -32,6 +32,22 @@ The gravity-sensing neurons barely touch the Giant Fiber (weights of 2 and 4, i.
 and the motor neuron picked from its name turned out to be a walking neuron, not the jump
 one. The real trigger is visual looming, and the real output is TTMn.
 
+## Web viewer
+
+`fly-escape-viewer/` is a Vite + React + TypeScript front end that replays the exported
+spike times. It runs no neuroscience: it fetches `public/data/*.json` and drives every
+flash off the recorded millisecond timestamps.
+
+```bash
+cd fly-escape-viewer
+npm install
+npm run dev
+```
+
+Pick a scenario, press Play, and the clock runs 1 ms of simulation per 1 ms of real time.
+Refresh the copies in `fly-escape-viewer/public/data/` whenever `export_scenarios.py` is
+re-run.
+
 ## Setup
 
 ```bash

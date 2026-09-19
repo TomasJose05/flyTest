@@ -1,0 +1,237 @@
+:root {
+  --bg: #0f1216;
+  --panel: #171b21;
+  --line: #262c35;
+  --text: #e6e9ee;
+  --muted: #8d97a5;
+  --sensory: #4c72b0;
+  --decision: #dd8452;
+  --jump: #55a868;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.muted {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.app-head p {
+  max-width: 64ch;
+  margin: 0;
+}
+.error {
+  color: #e06c75;
+}
+
+/* ---- scenario selector ---- */
+.scenarios {
+  display: flex;
+  gap: 10px;
+  margin: 24px 0 18px;
+  flex-wrap: wrap;
+}
+.scenario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  transition: border-color 0.15s, background 0.15s;
+}
+.scenario:hover {
+  border-color: #3a424e;
+}
+.scenario.is-active {
+  border-color: var(--decision);
+  background: #1e2229;
+}
+
+/* ---- transport ---- */
+.transport {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.transport button {
+  padding: 8px 18px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+}
+.transport button.primary {
+  background: var(--text);
+  color: var(--bg);
+  font-weight: 600;
+  border-color: var(--text);
+}
+.clock {
+  margin-left: auto;
+  font: 600 1.5rem/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- timeline ---- */
+.timeline {
+  margin-bottom: 22px;
+}
+.timeline-track {
+  position: relative;
+  height: 26px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  overflow: hidden;
+}
+.timeline-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: #22303f;
+}
+.timeline-after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-left: 1px dashed var(--line);
+}
+.marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  margin-left: -1px;
+}
+.marker-decision {
+  background: var(--decision);
+}
+.marker-jump {
+  background: var(--jump);
+}
+.timeline-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ---- panels ---- */
+.stages {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 760px) {
+  .stages {
+    grid-template-columns: 1fr 240px 240px;
+  }
+}
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  padding: 16px;
+}
+.panel-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 14px;
+}
+
+/* ---- sensory raster ---- */
+.raster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #232a33;
+  transition: background 0.12s linear, box-shadow 0.12s linear;
+}
+.dot-lit {
+  background: var(--sensory);
+  box-shadow: 0 0 8px rgba(76, 114, 176, 0.9);
+  transition: none; /* light up instantly, fade out gently */
+}
+
+/* ---- event indicators ---- */
+.indicator-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.indicator {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #232a33;
+  border: 2px solid var(--line);
+  transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+.indicator.is-firing {
+  transform: scale(1.12);
+}
+.indicator-decision.is-firing {
+  background: var(--decision);
+  box-shadow: 0 0 34px rgba(221, 132, 82, 0.85);
+}
+.indicator-jump.is-firing {
+  background: var(--jump);
+  box-shadow: 0 0 34px rgba(85, 168, 104, 0.85);
+}
+.indicator-decision.is-fired {
+  background: #55381f;
+  border-color: var(--decision);
+}
+.indicator-jump.is-fired {
+  background: #23402c;
+  border-color: var(--jump);
+}
+.indicator.is-never {
+  border-style: dashed;
+}
+.caption {
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.caption-never {
+  color: #e06c75;
+  font-weight: 600;
+}
