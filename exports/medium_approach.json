@@ -1,0 +1,3925 @@
+{
+  "scenario": "medium_approach",
+  "ramp_duration_ms": 800,
+  "sensory_spikes": [
+    {
+      "neuron_index": 144,
+      "time_ms": 603.8
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 607.6
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 608.5
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 618.5
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 618.7
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 619.2
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 619.4
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 619.9
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 620.4
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 620.8
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 621.4
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 621.4
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 622.0
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 624.3
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 625.0
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 626.8
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 632.1
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 633.4
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 634.8
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 635.0
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 635.3
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 635.7
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 635.8
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 636.2
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 636.8
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 641.0
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 644.6
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 644.9
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 645.7
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 646.6
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 646.7
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 647.0
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 647.4
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 647.7
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 648.1
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 648.1
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 648.6
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 648.6
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 648.9
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 649.1
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 649.6
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 649.6
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 650.2
+    },
+    {
+      "neuron_index": 89,
+      "time_ms": 651.3
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 652.5
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 653.2
+    },
+    {
+      "neuron_index": 2,
+      "time_ms": 654.3
+    },
+    {
+      "neuron_index": 93,
+      "time_ms": 654.4
+    },
+    {
+      "neuron_index": 103,
+      "time_ms": 654.6
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 655.0
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 655.1
+    },
+    {
+      "neuron_index": 6,
+      "time_ms": 655.4
+    },
+    {
+      "neuron_index": 162,
+      "time_ms": 655.4
+    },
+    {
+      "neuron_index": 116,
+      "time_ms": 655.5
+    },
+    {
+      "neuron_index": 145,
+      "time_ms": 655.6
+    },
+    {
+      "neuron_index": 119,
+      "time_ms": 656.5
+    },
+    {
+      "neuron_index": 111,
+      "time_ms": 657.1
+    },
+    {
+      "neuron_index": 81,
+      "time_ms": 657.3
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 658.7
+    },
+    {
+      "neuron_index": 22,
+      "time_ms": 658.8
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 659.7
+    },
+    {
+      "neuron_index": 115,
+      "time_ms": 661.2
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 661.6
+    },
+    {
+      "neuron_index": 47,
+      "time_ms": 662.2
+    },
+    {
+      "neuron_index": 12,
+      "time_ms": 662.9
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 663.0
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 663.2
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 663.5
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 663.9
+    },
+    {
+      "neuron_index": 70,
+      "time_ms": 664.2
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 664.4
+    },
+    {
+      "neuron_index": 95,
+      "time_ms": 665.1
+    },
+    {
+      "neuron_index": 135,
+      "time_ms": 666.3
+    },
+    {
+      "neuron_index": 128,
+      "time_ms": 666.5
+    },
+    {
+      "neuron_index": 21,
+      "time_ms": 667.2
+    },
+    {
+      "neuron_index": 143,
+      "time_ms": 668.0
+    },
+    {
+      "neuron_index": 118,
+      "time_ms": 668.8
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 669.2
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 669.6
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 669.8
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 670.3
+    },
+    {
+      "neuron_index": 136,
+      "time_ms": 670.4
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 670.5
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 671.0
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 671.5
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 671.9
+    },
+    {
+      "neuron_index": 131,
+      "time_ms": 671.9
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 672.4
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 672.4
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 672.8
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 673.1
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 673.1
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 673.9
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 674.8
+    },
+    {
+      "neuron_index": 82,
+      "time_ms": 675.0
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 675.0
+    },
+    {
+      "neuron_index": 67,
+      "time_ms": 675.1
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 675.3
+    },
+    {
+      "neuron_index": 14,
+      "time_ms": 675.9
+    },
+    {
+      "neuron_index": 141,
+      "time_ms": 676.0
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 676.1
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 676.3
+    },
+    {
+      "neuron_index": 55,
+      "time_ms": 676.5
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 676.8
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 677.1
+    },
+    {
+      "neuron_index": 9,
+      "time_ms": 677.2
+    },
+    {
+      "neuron_index": 129,
+      "time_ms": 677.4
+    },
+    {
+      "neuron_index": 74,
+      "time_ms": 677.6
+    },
+    {
+      "neuron_index": 99,
+      "time_ms": 677.6
+    },
+    {
+      "neuron_index": 1,
+      "time_ms": 677.7
+    },
+    {
+      "neuron_index": 138,
+      "time_ms": 677.9
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 677.9
+    },
+    {
+      "neuron_index": 51,
+      "time_ms": 678.2
+    },
+    {
+      "neuron_index": 31,
+      "time_ms": 678.6
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 678.7
+    },
+    {
+      "neuron_index": 120,
+      "time_ms": 678.7
+    },
+    {
+      "neuron_index": 89,
+      "time_ms": 679.5
+    },
+    {
+      "neuron_index": 94,
+      "time_ms": 679.5
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 679.7
+    },
+    {
+      "neuron_index": 15,
+      "time_ms": 680.5
+    },
+    {
+      "neuron_index": 18,
+      "time_ms": 681.3
+    },
+    {
+      "neuron_index": 57,
+      "time_ms": 681.8
+    },
+    {
+      "neuron_index": 122,
+      "time_ms": 682.0
+    },
+    {
+      "neuron_index": 2,
+      "time_ms": 682.5
+    },
+    {
+      "neuron_index": 93,
+      "time_ms": 682.6
+    },
+    {
+      "neuron_index": 103,
+      "time_ms": 682.8
+    },
+    {
+      "neuron_index": 6,
+      "time_ms": 683.6
+    },
+    {
+      "neuron_index": 162,
+      "time_ms": 683.6
+    },
+    {
+      "neuron_index": 116,
+      "time_ms": 683.7
+    },
+    {
+      "neuron_index": 145,
+      "time_ms": 683.8
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 684.4
+    },
+    {
+      "neuron_index": 119,
+      "time_ms": 684.7
+    },
+    {
+      "neuron_index": 111,
+      "time_ms": 685.3
+    },
+    {
+      "neuron_index": 81,
+      "time_ms": 685.5
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 685.8
+    },
+    {
+      "neuron_index": 92,
+      "time_ms": 685.8
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 686.0
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 686.3
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 686.7
+    },
+    {
+      "neuron_index": 22,
+      "time_ms": 687.0
+    },
+    {
+      "neuron_index": 64,
+      "time_ms": 687.1
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 687.2
+    },
+    {
+      "neuron_index": 142,
+      "time_ms": 687.6
+    },
+    {
+      "neuron_index": 30,
+      "time_ms": 688.1
+    },
+    {
+      "neuron_index": 35,
+      "time_ms": 688.1
+    },
+    {
+      "neuron_index": 10,
+      "time_ms": 688.6
+    },
+    {
+      "neuron_index": 71,
+      "time_ms": 689.2
+    },
+    {
+      "neuron_index": 98,
+      "time_ms": 689.3
+    },
+    {
+      "neuron_index": 115,
+      "time_ms": 689.4
+    },
+    {
+      "neuron_index": 13,
+      "time_ms": 689.5
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 689.5
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 689.7
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 690.2
+    },
+    {
+      "neuron_index": 47,
+      "time_ms": 690.4
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 690.4
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 690.9
+    },
+    {
+      "neuron_index": 163,
+      "time_ms": 691.0
+    },
+    {
+      "neuron_index": 12,
+      "time_ms": 691.1
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 691.4
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 691.8
+    },
+    {
+      "neuron_index": 56,
+      "time_ms": 692.0
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 692.0
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 692.3
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 692.3
+    },
+    {
+      "neuron_index": 70,
+      "time_ms": 692.4
+    },
+    {
+      "neuron_index": 79,
+      "time_ms": 692.4
+    },
+    {
+      "neuron_index": 69,
+      "time_ms": 692.6
+    },
+    {
+      "neuron_index": 26,
+      "time_ms": 692.9
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 693.0
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 693.0
+    },
+    {
+      "neuron_index": 95,
+      "time_ms": 693.3
+    },
+    {
+      "neuron_index": 133,
+      "time_ms": 693.5
+    },
+    {
+      "neuron_index": 96,
+      "time_ms": 694.4
+    },
+    {
+      "neuron_index": 135,
+      "time_ms": 694.5
+    },
+    {
+      "neuron_index": 128,
+      "time_ms": 694.6
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 695.2
+    },
+    {
+      "neuron_index": 21,
+      "time_ms": 695.4
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 695.6
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 695.9
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 696.0
+    },
+    {
+      "neuron_index": 54,
+      "time_ms": 696.1
+    },
+    {
+      "neuron_index": 143,
+      "time_ms": 696.1
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 696.7
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 696.7
+    },
+    {
+      "neuron_index": 118,
+      "time_ms": 697.0
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 697.6
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 697.7
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 697.8
+    },
+    {
+      "neuron_index": 150,
+      "time_ms": 697.9
+    },
+    {
+      "neuron_index": 136,
+      "time_ms": 698.5
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 699.1
+    },
+    {
+      "neuron_index": 154,
+      "time_ms": 699.2
+    },
+    {
+      "neuron_index": 8,
+      "time_ms": 699.5
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 699.6
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 699.9
+    },
+    {
+      "neuron_index": 131,
+      "time_ms": 700.0
+    },
+    {
+      "neuron_index": 125,
+      "time_ms": 701.5
+    },
+    {
+      "neuron_index": 7,
+      "time_ms": 701.6
+    },
+    {
+      "neuron_index": 117,
+      "time_ms": 701.8
+    },
+    {
+      "neuron_index": 89,
+      "time_ms": 702.3
+    },
+    {
+      "neuron_index": 87,
+      "time_ms": 702.9
+    },
+    {
+      "neuron_index": 82,
+      "time_ms": 703.1
+    },
+    {
+      "neuron_index": 27,
+      "time_ms": 703.2
+    },
+    {
+      "neuron_index": 67,
+      "time_ms": 703.2
+    },
+    {
+      "neuron_index": 14,
+      "time_ms": 704.0
+    },
+    {
+      "neuron_index": 17,
+      "time_ms": 704.0
+    },
+    {
+      "neuron_index": 141,
+      "time_ms": 704.1
+    },
+    {
+      "neuron_index": 137,
+      "time_ms": 704.2
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 704.3
+    },
+    {
+      "neuron_index": 49,
+      "time_ms": 704.4
+    },
+    {
+      "neuron_index": 55,
+      "time_ms": 704.6
+    },
+    {
+      "neuron_index": 2,
+      "time_ms": 705.3
+    },
+    {
+      "neuron_index": 9,
+      "time_ms": 705.3
+    },
+    {
+      "neuron_index": 93,
+      "time_ms": 705.4
+    },
+    {
+      "neuron_index": 129,
+      "time_ms": 705.5
+    },
+    {
+      "neuron_index": 103,
+      "time_ms": 705.6
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 705.7
+    },
+    {
+      "neuron_index": 74,
+      "time_ms": 705.7
+    },
+    {
+      "neuron_index": 99,
+      "time_ms": 705.7
+    },
+    {
+      "neuron_index": 1,
+      "time_ms": 705.8
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 705.9
+    },
+    {
+      "neuron_index": 138,
+      "time_ms": 706.0
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 706.2
+    },
+    {
+      "neuron_index": 51,
+      "time_ms": 706.3
+    },
+    {
+      "neuron_index": 6,
+      "time_ms": 706.4
+    },
+    {
+      "neuron_index": 162,
+      "time_ms": 706.4
+    },
+    {
+      "neuron_index": 116,
+      "time_ms": 706.5
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 706.6
+    },
+    {
+      "neuron_index": 145,
+      "time_ms": 706.6
+    },
+    {
+      "neuron_index": 31,
+      "time_ms": 706.7
+    },
+    {
+      "neuron_index": 120,
+      "time_ms": 706.8
+    },
+    {
+      "neuron_index": 114,
+      "time_ms": 706.9
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 707.1
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 707.5
+    },
+    {
+      "neuron_index": 119,
+      "time_ms": 707.5
+    },
+    {
+      "neuron_index": 94,
+      "time_ms": 707.6
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 707.7
+    },
+    {
+      "neuron_index": 111,
+      "time_ms": 708.1
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 708.2
+    },
+    {
+      "neuron_index": 81,
+      "time_ms": 708.3
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 708.4
+    },
+    {
+      "neuron_index": 39,
+      "time_ms": 708.5
+    },
+    {
+      "neuron_index": 15,
+      "time_ms": 708.6
+    },
+    {
+      "neuron_index": 78,
+      "time_ms": 708.9
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 708.9
+    },
+    {
+      "neuron_index": 18,
+      "time_ms": 709.4
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 709.4
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 709.6
+    },
+    {
+      "neuron_index": 22,
+      "time_ms": 709.8
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 709.8
+    },
+    {
+      "neuron_index": 57,
+      "time_ms": 709.9
+    },
+    {
+      "neuron_index": 122,
+      "time_ms": 710.1
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 710.3
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 710.3
+    },
+    {
+      "neuron_index": 34,
+      "time_ms": 710.6
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 711.0
+    },
+    {
+      "neuron_index": 61,
+      "time_ms": 711.1
+    },
+    {
+      "neuron_index": 59,
+      "time_ms": 711.2
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 711.9
+    },
+    {
+      "neuron_index": 115,
+      "time_ms": 712.2
+    },
+    {
+      "neuron_index": 38,
+      "time_ms": 712.4
+    },
+    {
+      "neuron_index": 65,
+      "time_ms": 713.1
+    },
+    {
+      "neuron_index": 90,
+      "time_ms": 713.1
+    },
+    {
+      "neuron_index": 47,
+      "time_ms": 713.2
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 713.2
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 713.3
+    },
+    {
+      "neuron_index": 106,
+      "time_ms": 713.6
+    },
+    {
+      "neuron_index": 12,
+      "time_ms": 713.8
+    },
+    {
+      "neuron_index": 92,
+      "time_ms": 713.9
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 714.0
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 714.3
+    },
+    {
+      "neuron_index": 126,
+      "time_ms": 714.6
+    },
+    {
+      "neuron_index": 159,
+      "time_ms": 714.7
+    },
+    {
+      "neuron_index": 45,
+      "time_ms": 714.8
+    },
+    {
+      "neuron_index": 70,
+      "time_ms": 715.1
+    },
+    {
+      "neuron_index": 64,
+      "time_ms": 715.2
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 715.5
+    },
+    {
+      "neuron_index": 142,
+      "time_ms": 715.7
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 715.8
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 715.8
+    },
+    {
+      "neuron_index": 149,
+      "time_ms": 715.9
+    },
+    {
+      "neuron_index": 95,
+      "time_ms": 716.0
+    },
+    {
+      "neuron_index": 30,
+      "time_ms": 716.2
+    },
+    {
+      "neuron_index": 35,
+      "time_ms": 716.2
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 716.6
+    },
+    {
+      "neuron_index": 10,
+      "time_ms": 716.7
+    },
+    {
+      "neuron_index": 135,
+      "time_ms": 717.2
+    },
+    {
+      "neuron_index": 71,
+      "time_ms": 717.3
+    },
+    {
+      "neuron_index": 128,
+      "time_ms": 717.3
+    },
+    {
+      "neuron_index": 98,
+      "time_ms": 717.4
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 717.5
+    },
+    {
+      "neuron_index": 13,
+      "time_ms": 717.6
+    },
+    {
+      "neuron_index": 160,
+      "time_ms": 717.6
+    },
+    {
+      "neuron_index": 21,
+      "time_ms": 718.1
+    },
+    {
+      "neuron_index": 44,
+      "time_ms": 718.1
+    },
+    {
+      "neuron_index": 52,
+      "time_ms": 718.2
+    },
+    {
+      "neuron_index": 143,
+      "time_ms": 718.8
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 719.0
+    },
+    {
+      "neuron_index": 163,
+      "time_ms": 719.1
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 719.5
+    },
+    {
+      "neuron_index": 118,
+      "time_ms": 719.7
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 719.8
+    },
+    {
+      "neuron_index": 56,
+      "time_ms": 720.1
+    },
+    {
+      "neuron_index": 79,
+      "time_ms": 720.5
+    },
+    {
+      "neuron_index": 69,
+      "time_ms": 720.7
+    },
+    {
+      "neuron_index": 26,
+      "time_ms": 721.0
+    },
+    {
+      "neuron_index": 136,
+      "time_ms": 721.2
+    },
+    {
+      "neuron_index": 77,
+      "time_ms": 721.4
+    },
+    {
+      "neuron_index": 133,
+      "time_ms": 721.6
+    },
+    {
+      "neuron_index": 89,
+      "time_ms": 722.2
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 722.3
+    },
+    {
+      "neuron_index": 96,
+      "time_ms": 722.5
+    },
+    {
+      "neuron_index": 131,
+      "time_ms": 722.7
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 723.7
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 723.9
+    },
+    {
+      "neuron_index": 58,
+      "time_ms": 724.0
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 724.1
+    },
+    {
+      "neuron_index": 134,
+      "time_ms": 724.1
+    },
+    {
+      "neuron_index": 54,
+      "time_ms": 724.2
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 724.2
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 724.3
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 724.6
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 724.8
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 725.0
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 725.1
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 725.1
+    },
+    {
+      "neuron_index": 2,
+      "time_ms": 725.2
+    },
+    {
+      "neuron_index": 93,
+      "time_ms": 725.3
+    },
+    {
+      "neuron_index": 155,
+      "time_ms": 725.4
+    },
+    {
+      "neuron_index": 103,
+      "time_ms": 725.5
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 725.5
+    },
+    {
+      "neuron_index": 82,
+      "time_ms": 725.8
+    },
+    {
+      "neuron_index": 60,
+      "time_ms": 725.9
+    },
+    {
+      "neuron_index": 67,
+      "time_ms": 725.9
+    },
+    {
+      "neuron_index": 150,
+      "time_ms": 725.9
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 726.0
+    },
+    {
+      "neuron_index": 132,
+      "time_ms": 726.0
+    },
+    {
+      "neuron_index": 6,
+      "time_ms": 726.3
+    },
+    {
+      "neuron_index": 162,
+      "time_ms": 726.3
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 726.4
+    },
+    {
+      "neuron_index": 116,
+      "time_ms": 726.4
+    },
+    {
+      "neuron_index": 75,
+      "time_ms": 726.5
+    },
+    {
+      "neuron_index": 145,
+      "time_ms": 726.5
+    },
+    {
+      "neuron_index": 14,
+      "time_ms": 726.7
+    },
+    {
+      "neuron_index": 141,
+      "time_ms": 726.8
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 726.9
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 726.9
+    },
+    {
+      "neuron_index": 124,
+      "time_ms": 726.9
+    },
+    {
+      "neuron_index": 154,
+      "time_ms": 727.2
+    },
+    {
+      "neuron_index": 55,
+      "time_ms": 727.3
+    },
+    {
+      "neuron_index": 119,
+      "time_ms": 727.3
+    },
+    {
+      "neuron_index": 8,
+      "time_ms": 727.5
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 727.6
+    },
+    {
+      "neuron_index": 111,
+      "time_ms": 727.9
+    },
+    {
+      "neuron_index": 9,
+      "time_ms": 728.0
+    },
+    {
+      "neuron_index": 81,
+      "time_ms": 728.1
+    },
+    {
+      "neuron_index": 129,
+      "time_ms": 728.2
+    },
+    {
+      "neuron_index": 74,
+      "time_ms": 728.4
+    },
+    {
+      "neuron_index": 99,
+      "time_ms": 728.4
+    },
+    {
+      "neuron_index": 1,
+      "time_ms": 728.5
+    },
+    {
+      "neuron_index": 138,
+      "time_ms": 728.7
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 728.8
+    },
+    {
+      "neuron_index": 51,
+      "time_ms": 729.0
+    },
+    {
+      "neuron_index": 23,
+      "time_ms": 729.2
+    },
+    {
+      "neuron_index": 31,
+      "time_ms": 729.4
+    },
+    {
+      "neuron_index": 152,
+      "time_ms": 729.4
+    },
+    {
+      "neuron_index": 107,
+      "time_ms": 729.5
+    },
+    {
+      "neuron_index": 120,
+      "time_ms": 729.5
+    },
+    {
+      "neuron_index": 125,
+      "time_ms": 729.5
+    },
+    {
+      "neuron_index": 7,
+      "time_ms": 729.6
+    },
+    {
+      "neuron_index": 22,
+      "time_ms": 729.6
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 729.8
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 729.8
+    },
+    {
+      "neuron_index": 117,
+      "time_ms": 729.8
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 729.9
+    },
+    {
+      "neuron_index": 94,
+      "time_ms": 730.3
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 730.6
+    },
+    {
+      "neuron_index": 130,
+      "time_ms": 730.6
+    },
+    {
+      "neuron_index": 87,
+      "time_ms": 730.9
+    },
+    {
+      "neuron_index": 27,
+      "time_ms": 731.2
+    },
+    {
+      "neuron_index": 15,
+      "time_ms": 731.3
+    },
+    {
+      "neuron_index": 17,
+      "time_ms": 732.0
+    },
+    {
+      "neuron_index": 115,
+      "time_ms": 732.0
+    },
+    {
+      "neuron_index": 18,
+      "time_ms": 732.1
+    },
+    {
+      "neuron_index": 137,
+      "time_ms": 732.2
+    },
+    {
+      "neuron_index": 49,
+      "time_ms": 732.4
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 732.4
+    },
+    {
+      "neuron_index": 57,
+      "time_ms": 732.6
+    },
+    {
+      "neuron_index": 62,
+      "time_ms": 732.7
+    },
+    {
+      "neuron_index": 122,
+      "time_ms": 732.8
+    },
+    {
+      "neuron_index": 47,
+      "time_ms": 733.0
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 733.4
+    },
+    {
+      "neuron_index": 153,
+      "time_ms": 733.4
+    },
+    {
+      "neuron_index": 12,
+      "time_ms": 733.6
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 733.7
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 734.5
+    },
+    {
+      "neuron_index": 19,
+      "time_ms": 734.7
+    },
+    {
+      "neuron_index": 70,
+      "time_ms": 734.9
+    },
+    {
+      "neuron_index": 114,
+      "time_ms": 734.9
+    },
+    {
+      "neuron_index": 112,
+      "time_ms": 735.1
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 735.4
+    },
+    {
+      "neuron_index": 76,
+      "time_ms": 735.5
+    },
+    {
+      "neuron_index": 95,
+      "time_ms": 735.8
+    },
+    {
+      "neuron_index": 32,
+      "time_ms": 736.4
+    },
+    {
+      "neuron_index": 39,
+      "time_ms": 736.5
+    },
+    {
+      "neuron_index": 92,
+      "time_ms": 736.6
+    },
+    {
+      "neuron_index": 50,
+      "time_ms": 736.8
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 736.9
+    },
+    {
+      "neuron_index": 78,
+      "time_ms": 736.9
+    },
+    {
+      "neuron_index": 135,
+      "time_ms": 737.0
+    },
+    {
+      "neuron_index": 128,
+      "time_ms": 737.1
+    },
+    {
+      "neuron_index": 68,
+      "time_ms": 737.4
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 737.4
+    },
+    {
+      "neuron_index": 146,
+      "time_ms": 737.6
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 737.7
+    },
+    {
+      "neuron_index": 21,
+      "time_ms": 737.9
+    },
+    {
+      "neuron_index": 64,
+      "time_ms": 737.9
+    },
+    {
+      "neuron_index": 142,
+      "time_ms": 738.4
+    },
+    {
+      "neuron_index": 34,
+      "time_ms": 738.6
+    },
+    {
+      "neuron_index": 143,
+      "time_ms": 738.6
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 738.8
+    },
+    {
+      "neuron_index": 35,
+      "time_ms": 738.8
+    },
+    {
+      "neuron_index": 30,
+      "time_ms": 738.9
+    },
+    {
+      "neuron_index": 61,
+      "time_ms": 739.1
+    },
+    {
+      "neuron_index": 59,
+      "time_ms": 739.2
+    },
+    {
+      "neuron_index": 10,
+      "time_ms": 739.3
+    },
+    {
+      "neuron_index": 118,
+      "time_ms": 739.5
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 739.6
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 739.7
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 739.8
+    },
+    {
+      "neuron_index": 71,
+      "time_ms": 740.0
+    },
+    {
+      "neuron_index": 89,
+      "time_ms": 740.1
+    },
+    {
+      "neuron_index": 98,
+      "time_ms": 740.1
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 740.2
+    },
+    {
+      "neuron_index": 13,
+      "time_ms": 740.3
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 740.3
+    },
+    {
+      "neuron_index": 38,
+      "time_ms": 740.4
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 740.4
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 740.5
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 740.7
+    },
+    {
+      "neuron_index": 5,
+      "time_ms": 740.9
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 741.0
+    },
+    {
+      "neuron_index": 136,
+      "time_ms": 741.0
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 741.1
+    },
+    {
+      "neuron_index": 65,
+      "time_ms": 741.1
+    },
+    {
+      "neuron_index": 90,
+      "time_ms": 741.1
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 741.5
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 741.6
+    },
+    {
+      "neuron_index": 106,
+      "time_ms": 741.6
+    },
+    {
+      "neuron_index": 163,
+      "time_ms": 741.7
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 741.9
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 742.4
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 742.4
+    },
+    {
+      "neuron_index": 131,
+      "time_ms": 742.5
+    },
+    {
+      "neuron_index": 126,
+      "time_ms": 742.6
+    },
+    {
+      "neuron_index": 45,
+      "time_ms": 742.7
+    },
+    {
+      "neuron_index": 56,
+      "time_ms": 742.7
+    },
+    {
+      "neuron_index": 159,
+      "time_ms": 742.7
+    },
+    {
+      "neuron_index": 2,
+      "time_ms": 743.1
+    },
+    {
+      "neuron_index": 79,
+      "time_ms": 743.1
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 743.1
+    },
+    {
+      "neuron_index": 93,
+      "time_ms": 743.2
+    },
+    {
+      "neuron_index": 69,
+      "time_ms": 743.3
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 743.4
+    },
+    {
+      "neuron_index": 103,
+      "time_ms": 743.4
+    },
+    {
+      "neuron_index": 26,
+      "time_ms": 743.6
+    },
+    {
+      "neuron_index": 149,
+      "time_ms": 743.8
+    },
+    {
+      "neuron_index": 6,
+      "time_ms": 744.2
+    },
+    {
+      "neuron_index": 133,
+      "time_ms": 744.2
+    },
+    {
+      "neuron_index": 162,
+      "time_ms": 744.2
+    },
+    {
+      "neuron_index": 116,
+      "time_ms": 744.3
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 744.4
+    },
+    {
+      "neuron_index": 40,
+      "time_ms": 744.4
+    },
+    {
+      "neuron_index": 145,
+      "time_ms": 744.4
+    },
+    {
+      "neuron_index": 96,
+      "time_ms": 745.1
+    },
+    {
+      "neuron_index": 119,
+      "time_ms": 745.2
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 745.3
+    },
+    {
+      "neuron_index": 160,
+      "time_ms": 745.5
+    },
+    {
+      "neuron_index": 82,
+      "time_ms": 745.6
+    },
+    {
+      "neuron_index": 88,
+      "time_ms": 745.6
+    },
+    {
+      "neuron_index": 67,
+      "time_ms": 745.7
+    },
+    {
+      "neuron_index": 111,
+      "time_ms": 745.8
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 746.0
+    },
+    {
+      "neuron_index": 44,
+      "time_ms": 746.0
+    },
+    {
+      "neuron_index": 81,
+      "time_ms": 746.0
+    },
+    {
+      "neuron_index": 52,
+      "time_ms": 746.1
+    },
+    {
+      "neuron_index": 157,
+      "time_ms": 746.1
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 746.4
+    },
+    {
+      "neuron_index": 14,
+      "time_ms": 746.5
+    },
+    {
+      "neuron_index": 141,
+      "time_ms": 746.6
+    },
+    {
+      "neuron_index": 139,
+      "time_ms": 746.7
+    },
+    {
+      "neuron_index": 54,
+      "time_ms": 746.8
+    },
+    {
+      "neuron_index": 121,
+      "time_ms": 747.0
+    },
+    {
+      "neuron_index": 55,
+      "time_ms": 747.1
+    },
+    {
+      "neuron_index": 22,
+      "time_ms": 747.5
+    },
+    {
+      "neuron_index": 9,
+      "time_ms": 747.8
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 747.8
+    },
+    {
+      "neuron_index": 129,
+      "time_ms": 748.0
+    },
+    {
+      "neuron_index": 74,
+      "time_ms": 748.2
+    },
+    {
+      "neuron_index": 99,
+      "time_ms": 748.2
+    },
+    {
+      "neuron_index": 1,
+      "time_ms": 748.3
+    },
+    {
+      "neuron_index": 138,
+      "time_ms": 748.5
+    },
+    {
+      "neuron_index": 150,
+      "time_ms": 748.5
+    },
+    {
+      "neuron_index": 51,
+      "time_ms": 748.8
+    },
+    {
+      "neuron_index": 31,
+      "time_ms": 749.2
+    },
+    {
+      "neuron_index": 77,
+      "time_ms": 749.3
+    },
+    {
+      "neuron_index": 120,
+      "time_ms": 749.3
+    },
+    {
+      "neuron_index": 158,
+      "time_ms": 749.5
+    },
+    {
+      "neuron_index": 154,
+      "time_ms": 749.8
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 749.9
+    },
+    {
+      "neuron_index": 115,
+      "time_ms": 749.9
+    },
+    {
+      "neuron_index": 8,
+      "time_ms": 750.1
+    },
+    {
+      "neuron_index": 94,
+      "time_ms": 750.1
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 750.2
+    },
+    {
+      "neuron_index": 80,
+      "time_ms": 750.4
+    },
+    {
+      "neuron_index": 104,
+      "time_ms": 750.8
+    },
+    {
+      "neuron_index": 47,
+      "time_ms": 750.9
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 751.0
+    },
+    {
+      "neuron_index": 15,
+      "time_ms": 751.1
+    },
+    {
+      "neuron_index": 53,
+      "time_ms": 751.2
+    },
+    {
+      "neuron_index": 12,
+      "time_ms": 751.5
+    },
+    {
+      "neuron_index": 18,
+      "time_ms": 751.9
+    },
+    {
+      "neuron_index": 58,
+      "time_ms": 751.9
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 751.9
+    },
+    {
+      "neuron_index": 134,
+      "time_ms": 752.0
+    },
+    {
+      "neuron_index": 125,
+      "time_ms": 752.1
+    },
+    {
+      "neuron_index": 7,
+      "time_ms": 752.2
+    },
+    {
+      "neuron_index": 57,
+      "time_ms": 752.4
+    },
+    {
+      "neuron_index": 117,
+      "time_ms": 752.4
+    },
+    {
+      "neuron_index": 122,
+      "time_ms": 752.6
+    },
+    {
+      "neuron_index": 70,
+      "time_ms": 752.8
+    },
+    {
+      "neuron_index": 155,
+      "time_ms": 753.3
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 753.4
+    },
+    {
+      "neuron_index": 87,
+      "time_ms": 753.5
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 753.5
+    },
+    {
+      "neuron_index": 164,
+      "time_ms": 753.5
+    },
+    {
+      "neuron_index": 95,
+      "time_ms": 753.7
+    },
+    {
+      "neuron_index": 27,
+      "time_ms": 753.8
+    },
+    {
+      "neuron_index": 60,
+      "time_ms": 753.8
+    },
+    {
+      "neuron_index": 132,
+      "time_ms": 753.9
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 753.9
+    },
+    {
+      "neuron_index": 73,
+      "time_ms": 754.0
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 754.2
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 754.2
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 754.2
+    },
+    {
+      "neuron_index": 75,
+      "time_ms": 754.4
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 754.4
+    },
+    {
+      "neuron_index": 17,
+      "time_ms": 754.6
+    },
+    {
+      "neuron_index": 124,
+      "time_ms": 754.8
+    },
+    {
+      "neuron_index": 137,
+      "time_ms": 754.8
+    },
+    {
+      "neuron_index": 135,
+      "time_ms": 754.9
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 754.9
+    },
+    {
+      "neuron_index": 46,
+      "time_ms": 755.0
+    },
+    {
+      "neuron_index": 49,
+      "time_ms": 755.0
+    },
+    {
+      "neuron_index": 128,
+      "time_ms": 755.0
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 755.1
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 755.6
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 755.6
+    },
+    {
+      "neuron_index": 21,
+      "time_ms": 755.8
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 755.8
+    },
+    {
+      "neuron_index": 102,
+      "time_ms": 755.9
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 756.0
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 756.1
+    },
+    {
+      "neuron_index": 92,
+      "time_ms": 756.3
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 756.4
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 756.5
+    },
+    {
+      "neuron_index": 143,
+      "time_ms": 756.5
+    },
+    {
+      "neuron_index": 89,
+      "time_ms": 756.6
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 757.0
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 757.0
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 757.0
+    },
+    {
+      "neuron_index": 23,
+      "time_ms": 757.1
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 757.2
+    },
+    {
+      "neuron_index": 152,
+      "time_ms": 757.3
+    },
+    {
+      "neuron_index": 107,
+      "time_ms": 757.4
+    },
+    {
+      "neuron_index": 118,
+      "time_ms": 757.4
+    },
+    {
+      "neuron_index": 114,
+      "time_ms": 757.5
+    },
+    {
+      "neuron_index": 64,
+      "time_ms": 757.6
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 757.6
+    },
+    {
+      "neuron_index": 142,
+      "time_ms": 758.1
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 758.2
+    },
+    {
+      "neuron_index": 148,
+      "time_ms": 758.3
+    },
+    {
+      "neuron_index": 35,
+      "time_ms": 758.5
+    },
+    {
+      "neuron_index": 130,
+      "time_ms": 758.5
+    },
+    {
+      "neuron_index": 30,
+      "time_ms": 758.6
+    },
+    {
+      "neuron_index": 136,
+      "time_ms": 758.9
+    },
+    {
+      "neuron_index": 10,
+      "time_ms": 759.0
+    },
+    {
+      "neuron_index": 39,
+      "time_ms": 759.1
+    },
+    {
+      "neuron_index": 78,
+      "time_ms": 759.5
+    },
+    {
+      "neuron_index": 2,
+      "time_ms": 759.6
+    },
+    {
+      "neuron_index": 71,
+      "time_ms": 759.7
+    },
+    {
+      "neuron_index": 93,
+      "time_ms": 759.7
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 759.8
+    },
+    {
+      "neuron_index": 98,
+      "time_ms": 759.8
+    },
+    {
+      "neuron_index": 103,
+      "time_ms": 759.9
+    },
+    {
+      "neuron_index": 13,
+      "time_ms": 760.0
+    },
+    {
+      "neuron_index": 101,
+      "time_ms": 760.0
+    },
+    {
+      "neuron_index": 131,
+      "time_ms": 760.4
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 760.5
+    },
+    {
+      "neuron_index": 62,
+      "time_ms": 760.6
+    },
+    {
+      "neuron_index": 6,
+      "time_ms": 760.7
+    },
+    {
+      "neuron_index": 162,
+      "time_ms": 760.7
+    },
+    {
+      "neuron_index": 116,
+      "time_ms": 760.8
+    },
+    {
+      "neuron_index": 145,
+      "time_ms": 760.9
+    },
+    {
+      "neuron_index": 34,
+      "time_ms": 761.1
+    },
+    {
+      "neuron_index": 153,
+      "time_ms": 761.2
+    },
+    {
+      "neuron_index": 163,
+      "time_ms": 761.4
+    },
+    {
+      "neuron_index": 61,
+      "time_ms": 761.6
+    },
+    {
+      "neuron_index": 119,
+      "time_ms": 761.7
+    },
+    {
+      "neuron_index": 59,
+      "time_ms": 761.8
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 761.8
+    },
+    {
+      "neuron_index": 111,
+      "time_ms": 762.3
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 762.3
+    },
+    {
+      "neuron_index": 56,
+      "time_ms": 762.4
+    },
+    {
+      "neuron_index": 81,
+      "time_ms": 762.5
+    },
+    {
+      "neuron_index": 19,
+      "time_ms": 762.6
+    },
+    {
+      "neuron_index": 79,
+      "time_ms": 762.8
+    },
+    {
+      "neuron_index": 38,
+      "time_ms": 762.9
+    },
+    {
+      "neuron_index": 112,
+      "time_ms": 762.9
+    },
+    {
+      "neuron_index": 69,
+      "time_ms": 763.0
+    },
+    {
+      "neuron_index": 26,
+      "time_ms": 763.3
+    },
+    {
+      "neuron_index": 76,
+      "time_ms": 763.4
+    },
+    {
+      "neuron_index": 82,
+      "time_ms": 763.4
+    },
+    {
+      "neuron_index": 67,
+      "time_ms": 763.5
+    },
+    {
+      "neuron_index": 65,
+      "time_ms": 763.6
+    },
+    {
+      "neuron_index": 90,
+      "time_ms": 763.6
+    },
+    {
+      "neuron_index": 41,
+      "time_ms": 763.8
+    },
+    {
+      "neuron_index": 133,
+      "time_ms": 763.9
+    },
+    {
+      "neuron_index": 22,
+      "time_ms": 764.0
+    },
+    {
+      "neuron_index": 106,
+      "time_ms": 764.1
+    },
+    {
+      "neuron_index": 32,
+      "time_ms": 764.2
+    },
+    {
+      "neuron_index": 14,
+      "time_ms": 764.3
+    },
+    {
+      "neuron_index": 141,
+      "time_ms": 764.4
+    },
+    {
+      "neuron_index": 50,
+      "time_ms": 764.6
+    },
+    {
+      "neuron_index": 96,
+      "time_ms": 764.8
+    },
+    {
+      "neuron_index": 55,
+      "time_ms": 764.9
+    },
+    {
+      "neuron_index": 126,
+      "time_ms": 765.1
+    },
+    {
+      "neuron_index": 45,
+      "time_ms": 765.2
+    },
+    {
+      "neuron_index": 68,
+      "time_ms": 765.2
+    },
+    {
+      "neuron_index": 159,
+      "time_ms": 765.2
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 765.3
+    },
+    {
+      "neuron_index": 146,
+      "time_ms": 765.4
+    },
+    {
+      "neuron_index": 9,
+      "time_ms": 765.6
+    },
+    {
+      "neuron_index": 25,
+      "time_ms": 765.6
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 765.6
+    },
+    {
+      "neuron_index": 129,
+      "time_ms": 765.8
+    },
+    {
+      "neuron_index": 74,
+      "time_ms": 766.0
+    },
+    {
+      "neuron_index": 99,
+      "time_ms": 766.0
+    },
+    {
+      "neuron_index": 1,
+      "time_ms": 766.1
+    },
+    {
+      "neuron_index": 115,
+      "time_ms": 766.3
+    },
+    {
+      "neuron_index": 138,
+      "time_ms": 766.3
+    },
+    {
+      "neuron_index": 149,
+      "time_ms": 766.3
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 766.4
+    },
+    {
+      "neuron_index": 54,
+      "time_ms": 766.5
+    },
+    {
+      "neuron_index": 51,
+      "time_ms": 766.6
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 766.7
+    },
+    {
+      "neuron_index": 31,
+      "time_ms": 767.0
+    },
+    {
+      "neuron_index": 120,
+      "time_ms": 767.1
+    },
+    {
+      "neuron_index": 47,
+      "time_ms": 767.3
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 767.3
+    },
+    {
+      "neuron_index": 140,
+      "time_ms": 767.6
+    },
+    {
+      "neuron_index": 12,
+      "time_ms": 767.9
+    },
+    {
+      "neuron_index": 94,
+      "time_ms": 767.9
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 768.0
+    },
+    {
+      "neuron_index": 160,
+      "time_ms": 768.0
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 768.2
+    },
+    {
+      "neuron_index": 150,
+      "time_ms": 768.2
+    },
+    {
+      "neuron_index": 44,
+      "time_ms": 768.5
+    },
+    {
+      "neuron_index": 52,
+      "time_ms": 768.6
+    },
+    {
+      "neuron_index": 5,
+      "time_ms": 768.7
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 768.7
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 768.7
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 768.8
+    },
+    {
+      "neuron_index": 15,
+      "time_ms": 768.9
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 768.9
+    },
+    {
+      "neuron_index": 70,
+      "time_ms": 769.2
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 769.3
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 769.4
+    },
+    {
+      "neuron_index": 154,
+      "time_ms": 769.5
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 769.6
+    },
+    {
+      "neuron_index": 18,
+      "time_ms": 769.7
+    },
+    {
+      "neuron_index": 8,
+      "time_ms": 769.8
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 769.8
+    },
+    {
+      "neuron_index": 83,
+      "time_ms": 770.0
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 770.1
+    },
+    {
+      "neuron_index": 95,
+      "time_ms": 770.1
+    },
+    {
+      "neuron_index": 57,
+      "time_ms": 770.2
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 770.2
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 770.3
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 770.4
+    },
+    {
+      "neuron_index": 122,
+      "time_ms": 770.4
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 770.6
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 770.8
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 770.8
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 771.0
+    },
+    {
+      "neuron_index": 135,
+      "time_ms": 771.3
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 771.4
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 771.4
+    },
+    {
+      "neuron_index": 128,
+      "time_ms": 771.4
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 771.5
+    },
+    {
+      "neuron_index": 77,
+      "time_ms": 771.8
+    },
+    {
+      "neuron_index": 125,
+      "time_ms": 771.8
+    },
+    {
+      "neuron_index": 7,
+      "time_ms": 771.9
+    },
+    {
+      "neuron_index": 89,
+      "time_ms": 772.0
+    },
+    {
+      "neuron_index": 117,
+      "time_ms": 772.1
+    },
+    {
+      "neuron_index": 21,
+      "time_ms": 772.2
+    },
+    {
+      "neuron_index": 40,
+      "time_ms": 772.2
+    },
+    {
+      "neuron_index": 143,
+      "time_ms": 772.9
+    },
+    {
+      "neuron_index": 87,
+      "time_ms": 773.2
+    },
+    {
+      "neuron_index": 88,
+      "time_ms": 773.4
+    },
+    {
+      "neuron_index": 27,
+      "time_ms": 773.5
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 773.6
+    },
+    {
+      "neuron_index": 118,
+      "time_ms": 773.8
+    },
+    {
+      "neuron_index": 157,
+      "time_ms": 773.9
+    },
+    {
+      "neuron_index": 92,
+      "time_ms": 774.1
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 774.3
+    },
+    {
+      "neuron_index": 17,
+      "time_ms": 774.3
+    },
+    {
+      "neuron_index": 48,
+      "time_ms": 774.3
+    },
+    {
+      "neuron_index": 58,
+      "time_ms": 774.4
+    },
+    {
+      "neuron_index": 134,
+      "time_ms": 774.5
+    },
+    {
+      "neuron_index": 137,
+      "time_ms": 774.5
+    },
+    {
+      "neuron_index": 139,
+      "time_ms": 774.5
+    },
+    {
+      "neuron_index": 49,
+      "time_ms": 774.6
+    },
+    {
+      "neuron_index": 121,
+      "time_ms": 774.8
+    },
+    {
+      "neuron_index": 2,
+      "time_ms": 774.9
+    },
+    {
+      "neuron_index": 93,
+      "time_ms": 775.0
+    },
+    {
+      "neuron_index": 66,
+      "time_ms": 775.2
+    },
+    {
+      "neuron_index": 103,
+      "time_ms": 775.2
+    },
+    {
+      "neuron_index": 136,
+      "time_ms": 775.3
+    },
+    {
+      "neuron_index": 64,
+      "time_ms": 775.4
+    },
+    {
+      "neuron_index": 155,
+      "time_ms": 775.8
+    },
+    {
+      "neuron_index": 142,
+      "time_ms": 775.9
+    },
+    {
+      "neuron_index": 6,
+      "time_ms": 776.0
+    },
+    {
+      "neuron_index": 162,
+      "time_ms": 776.0
+    },
+    {
+      "neuron_index": 116,
+      "time_ms": 776.1
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 776.1
+    },
+    {
+      "neuron_index": 145,
+      "time_ms": 776.2
+    },
+    {
+      "neuron_index": 35,
+      "time_ms": 776.3
+    },
+    {
+      "neuron_index": 60,
+      "time_ms": 776.3
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 776.3
+    },
+    {
+      "neuron_index": 30,
+      "time_ms": 776.4
+    },
+    {
+      "neuron_index": 132,
+      "time_ms": 776.4
+    },
+    {
+      "neuron_index": 10,
+      "time_ms": 776.8
+    },
+    {
+      "neuron_index": 131,
+      "time_ms": 776.8
+    },
+    {
+      "neuron_index": 75,
+      "time_ms": 776.9
+    },
+    {
+      "neuron_index": 119,
+      "time_ms": 777.0
+    },
+    {
+      "neuron_index": 114,
+      "time_ms": 777.1
+    },
+    {
+      "neuron_index": 124,
+      "time_ms": 777.3
+    },
+    {
+      "neuron_index": 158,
+      "time_ms": 777.3
+    },
+    {
+      "neuron_index": 71,
+      "time_ms": 777.5
+    },
+    {
+      "neuron_index": 98,
+      "time_ms": 777.6
+    },
+    {
+      "neuron_index": 111,
+      "time_ms": 777.6
+    },
+    {
+      "neuron_index": 13,
+      "time_ms": 777.8
+    },
+    {
+      "neuron_index": 81,
+      "time_ms": 777.8
+    },
+    {
+      "neuron_index": 80,
+      "time_ms": 778.1
+    },
+    {
+      "neuron_index": 104,
+      "time_ms": 778.5
+    },
+    {
+      "neuron_index": 39,
+      "time_ms": 778.7
+    },
+    {
+      "neuron_index": 53,
+      "time_ms": 778.9
+    },
+    {
+      "neuron_index": 78,
+      "time_ms": 779.1
+    },
+    {
+      "neuron_index": 163,
+      "time_ms": 779.2
+    },
+    {
+      "neuron_index": 22,
+      "time_ms": 779.3
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 779.3
+    },
+    {
+      "neuron_index": 42,
+      "time_ms": 779.4
+    },
+    {
+      "neuron_index": 23,
+      "time_ms": 779.5
+    },
+    {
+      "neuron_index": 152,
+      "time_ms": 779.7
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 779.8
+    },
+    {
+      "neuron_index": 82,
+      "time_ms": 779.8
+    },
+    {
+      "neuron_index": 107,
+      "time_ms": 779.8
+    },
+    {
+      "neuron_index": 67,
+      "time_ms": 779.9
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 780.1
+    },
+    {
+      "neuron_index": 56,
+      "time_ms": 780.2
+    },
+    {
+      "neuron_index": 63,
+      "time_ms": 780.5
+    },
+    {
+      "neuron_index": 79,
+      "time_ms": 780.6
+    },
+    {
+      "neuron_index": 14,
+      "time_ms": 780.7
+    },
+    {
+      "neuron_index": 34,
+      "time_ms": 780.7
+    },
+    {
+      "neuron_index": 69,
+      "time_ms": 780.8
+    },
+    {
+      "neuron_index": 141,
+      "time_ms": 780.8
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 780.9
+    },
+    {
+      "neuron_index": 130,
+      "time_ms": 780.9
+    },
+    {
+      "neuron_index": 26,
+      "time_ms": 781.1
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 781.1
+    },
+    {
+      "neuron_index": 61,
+      "time_ms": 781.2
+    },
+    {
+      "neuron_index": 164,
+      "time_ms": 781.2
+    },
+    {
+      "neuron_index": 55,
+      "time_ms": 781.3
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 781.3
+    },
+    {
+      "neuron_index": 59,
+      "time_ms": 781.4
+    },
+    {
+      "neuron_index": 115,
+      "time_ms": 781.6
+    },
+    {
+      "neuron_index": 133,
+      "time_ms": 781.6
+    },
+    {
+      "neuron_index": 73,
+      "time_ms": 781.7
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 781.8
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 781.8
+    },
+    {
+      "neuron_index": 9,
+      "time_ms": 782.0
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 782.0
+    },
+    {
+      "neuron_index": 129,
+      "time_ms": 782.2
+    },
+    {
+      "neuron_index": 74,
+      "time_ms": 782.4
+    },
+    {
+      "neuron_index": 99,
+      "time_ms": 782.4
+    },
+    {
+      "neuron_index": 1,
+      "time_ms": 782.5
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 782.5
+    },
+    {
+      "neuron_index": 38,
+      "time_ms": 782.5
+    },
+    {
+      "neuron_index": 96,
+      "time_ms": 782.5
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 782.5
+    },
+    {
+      "neuron_index": 47,
+      "time_ms": 782.6
+    },
+    {
+      "neuron_index": 46,
+      "time_ms": 782.7
+    },
+    {
+      "neuron_index": 138,
+      "time_ms": 782.7
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 782.9
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 783.0
+    },
+    {
+      "neuron_index": 51,
+      "time_ms": 783.0
+    },
+    {
+      "neuron_index": 62,
+      "time_ms": 783.0
+    },
+    {
+      "neuron_index": 12,
+      "time_ms": 783.2
+    },
+    {
+      "neuron_index": 65,
+      "time_ms": 783.2
+    },
+    {
+      "neuron_index": 90,
+      "time_ms": 783.2
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 783.3
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 783.3
+    },
+    {
+      "neuron_index": 31,
+      "time_ms": 783.4
+    },
+    {
+      "neuron_index": 120,
+      "time_ms": 783.5
+    },
+    {
+      "neuron_index": 102,
+      "time_ms": 783.6
+    },
+    {
+      "neuron_index": 153,
+      "time_ms": 783.6
+    },
+    {
+      "neuron_index": 106,
+      "time_ms": 783.7
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 783.8
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 783.8
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 783.9
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 783.9
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 784.0
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 784.0
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 784.1
+    },
+    {
+      "neuron_index": 54,
+      "time_ms": 784.2
+    },
+    {
+      "neuron_index": 94,
+      "time_ms": 784.3
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 784.3
+    },
+    {
+      "neuron_index": 70,
+      "time_ms": 784.5
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 784.5
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 784.7
+    },
+    {
+      "neuron_index": 126,
+      "time_ms": 784.7
+    },
+    {
+      "neuron_index": 45,
+      "time_ms": 784.8
+    },
+    {
+      "neuron_index": 159,
+      "time_ms": 784.8
+    },
+    {
+      "neuron_index": 19,
+      "time_ms": 785.0
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 785.2
+    },
+    {
+      "neuron_index": 15,
+      "time_ms": 785.3
+    },
+    {
+      "neuron_index": 112,
+      "time_ms": 785.3
+    },
+    {
+      "neuron_index": 95,
+      "time_ms": 785.4
+    },
+    {
+      "neuron_index": 76,
+      "time_ms": 785.8
+    },
+    {
+      "neuron_index": 149,
+      "time_ms": 785.9
+    },
+    {
+      "neuron_index": 150,
+      "time_ms": 785.9
+    },
+    {
+      "neuron_index": 148,
+      "time_ms": 786.0
+    },
+    {
+      "neuron_index": 18,
+      "time_ms": 786.1
+    },
+    {
+      "neuron_index": 89,
+      "time_ms": 786.4
+    },
+    {
+      "neuron_index": 32,
+      "time_ms": 786.6
+    },
+    {
+      "neuron_index": 57,
+      "time_ms": 786.6
+    },
+    {
+      "neuron_index": 135,
+      "time_ms": 786.6
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 786.7
+    },
+    {
+      "neuron_index": 128,
+      "time_ms": 786.7
+    },
+    {
+      "neuron_index": 122,
+      "time_ms": 786.8
+    },
+    {
+      "neuron_index": 50,
+      "time_ms": 787.0
+    },
+    {
+      "neuron_index": 154,
+      "time_ms": 787.2
+    },
+    {
+      "neuron_index": 0,
+      "time_ms": 787.4
+    },
+    {
+      "neuron_index": 8,
+      "time_ms": 787.5
+    },
+    {
+      "neuron_index": 21,
+      "time_ms": 787.5
+    },
+    {
+      "neuron_index": 68,
+      "time_ms": 787.6
+    },
+    {
+      "neuron_index": 160,
+      "time_ms": 787.6
+    },
+    {
+      "neuron_index": 101,
+      "time_ms": 787.7
+    },
+    {
+      "neuron_index": 146,
+      "time_ms": 787.8
+    },
+    {
+      "neuron_index": 44,
+      "time_ms": 788.1
+    },
+    {
+      "neuron_index": 52,
+      "time_ms": 788.2
+    },
+    {
+      "neuron_index": 143,
+      "time_ms": 788.2
+    },
+    {
+      "neuron_index": 118,
+      "time_ms": 789.1
+    },
+    {
+      "neuron_index": 151,
+      "time_ms": 789.2
+    },
+    {
+      "neuron_index": 2,
+      "time_ms": 789.3
+    },
+    {
+      "neuron_index": 93,
+      "time_ms": 789.4
+    },
+    {
+      "neuron_index": 125,
+      "time_ms": 789.5
+    },
+    {
+      "neuron_index": 7,
+      "time_ms": 789.6
+    },
+    {
+      "neuron_index": 103,
+      "time_ms": 789.6
+    },
+    {
+      "neuron_index": 117,
+      "time_ms": 789.8
+    },
+    {
+      "neuron_index": 123,
+      "time_ms": 790.0
+    },
+    {
+      "neuron_index": 6,
+      "time_ms": 790.4
+    },
+    {
+      "neuron_index": 92,
+      "time_ms": 790.4
+    },
+    {
+      "neuron_index": 162,
+      "time_ms": 790.4
+    },
+    {
+      "neuron_index": 116,
+      "time_ms": 790.5
+    },
+    {
+      "neuron_index": 136,
+      "time_ms": 790.6
+    },
+    {
+      "neuron_index": 145,
+      "time_ms": 790.6
+    },
+    {
+      "neuron_index": 87,
+      "time_ms": 790.9
+    },
+    {
+      "neuron_index": 5,
+      "time_ms": 791.1
+    },
+    {
+      "neuron_index": 27,
+      "time_ms": 791.2
+    },
+    {
+      "neuron_index": 41,
+      "time_ms": 791.4
+    },
+    {
+      "neuron_index": 77,
+      "time_ms": 791.4
+    },
+    {
+      "neuron_index": 119,
+      "time_ms": 791.4
+    },
+    {
+      "neuron_index": 144,
+      "time_ms": 791.4
+    },
+    {
+      "neuron_index": 64,
+      "time_ms": 791.7
+    },
+    {
+      "neuron_index": 17,
+      "time_ms": 792.0
+    },
+    {
+      "neuron_index": 111,
+      "time_ms": 792.0
+    },
+    {
+      "neuron_index": 131,
+      "time_ms": 792.1
+    },
+    {
+      "neuron_index": 81,
+      "time_ms": 792.2
+    },
+    {
+      "neuron_index": 137,
+      "time_ms": 792.2
+    },
+    {
+      "neuron_index": 142,
+      "time_ms": 792.2
+    },
+    {
+      "neuron_index": 49,
+      "time_ms": 792.3
+    },
+    {
+      "neuron_index": 35,
+      "time_ms": 792.6
+    },
+    {
+      "neuron_index": 30,
+      "time_ms": 792.7
+    },
+    {
+      "neuron_index": 10,
+      "time_ms": 793.1
+    },
+    {
+      "neuron_index": 25,
+      "time_ms": 793.2
+    },
+    {
+      "neuron_index": 36,
+      "time_ms": 793.5
+    },
+    {
+      "neuron_index": 22,
+      "time_ms": 793.7
+    },
+    {
+      "neuron_index": 43,
+      "time_ms": 793.7
+    },
+    {
+      "neuron_index": 71,
+      "time_ms": 793.8
+    },
+    {
+      "neuron_index": 91,
+      "time_ms": 793.8
+    },
+    {
+      "neuron_index": 58,
+      "time_ms": 793.9
+    },
+    {
+      "neuron_index": 98,
+      "time_ms": 793.9
+    },
+    {
+      "neuron_index": 105,
+      "time_ms": 793.9
+    },
+    {
+      "neuron_index": 134,
+      "time_ms": 794.0
+    },
+    {
+      "neuron_index": 13,
+      "time_ms": 794.1
+    },
+    {
+      "neuron_index": 161,
+      "time_ms": 794.4
+    },
+    {
+      "neuron_index": 37,
+      "time_ms": 794.6
+    },
+    {
+      "neuron_index": 40,
+      "time_ms": 794.6
+    },
+    {
+      "neuron_index": 108,
+      "time_ms": 794.6
+    },
+    {
+      "neuron_index": 114,
+      "time_ms": 794.8
+    },
+    {
+      "neuron_index": 33,
+      "time_ms": 795.0
+    },
+    {
+      "neuron_index": 24,
+      "time_ms": 795.1
+    },
+    {
+      "neuron_index": 82,
+      "time_ms": 795.1
+    },
+    {
+      "neuron_index": 113,
+      "time_ms": 795.1
+    },
+    {
+      "neuron_index": 67,
+      "time_ms": 795.2
+    },
+    {
+      "neuron_index": 140,
+      "time_ms": 795.2
+    },
+    {
+      "neuron_index": 155,
+      "time_ms": 795.3
+    },
+    {
+      "neuron_index": 85,
+      "time_ms": 795.5
+    },
+    {
+      "neuron_index": 86,
+      "time_ms": 795.5
+    },
+    {
+      "neuron_index": 163,
+      "time_ms": 795.5
+    },
+    {
+      "neuron_index": 28,
+      "time_ms": 795.6
+    },
+    {
+      "neuron_index": 88,
+      "time_ms": 795.7
+    },
+    {
+      "neuron_index": 60,
+      "time_ms": 795.8
+    },
+    {
+      "neuron_index": 100,
+      "time_ms": 795.9
+    },
+    {
+      "neuron_index": 132,
+      "time_ms": 795.9
+    },
+    {
+      "neuron_index": 14,
+      "time_ms": 796.0
+    },
+    {
+      "neuron_index": 115,
+      "time_ms": 796.0
+    },
+    {
+      "neuron_index": 3,
+      "time_ms": 796.1
+    },
+    {
+      "neuron_index": 141,
+      "time_ms": 796.1
+    },
+    {
+      "neuron_index": 157,
+      "time_ms": 796.2
+    },
+    {
+      "neuron_index": 39,
+      "time_ms": 796.4
+    },
+    {
+      "neuron_index": 75,
+      "time_ms": 796.4
+    },
+    {
+      "neuron_index": 4,
+      "time_ms": 796.5
+    },
+    {
+      "neuron_index": 56,
+      "time_ms": 796.5
+    },
+    {
+      "neuron_index": 110,
+      "time_ms": 796.5
+    },
+    {
+      "neuron_index": 55,
+      "time_ms": 796.6
+    },
+    {
+      "neuron_index": 78,
+      "time_ms": 796.8
+    },
+    {
+      "neuron_index": 124,
+      "time_ms": 796.8
+    },
+    {
+      "neuron_index": 139,
+      "time_ms": 796.8
+    },
+    {
+      "neuron_index": 16,
+      "time_ms": 796.9
+    },
+    {
+      "neuron_index": 79,
+      "time_ms": 796.9
+    },
+    {
+      "neuron_index": 47,
+      "time_ms": 797.0
+    },
+    {
+      "neuron_index": 72,
+      "time_ms": 797.0
+    },
+    {
+      "neuron_index": 69,
+      "time_ms": 797.1
+    },
+    {
+      "neuron_index": 84,
+      "time_ms": 797.1
+    },
+    {
+      "neuron_index": 121,
+      "time_ms": 797.1
+    },
+    {
+      "neuron_index": 127,
+      "time_ms": 797.1
+    },
+    {
+      "neuron_index": 9,
+      "time_ms": 797.3
+    },
+    {
+      "neuron_index": 26,
+      "time_ms": 797.4
+    },
+    {
+      "neuron_index": 109,
+      "time_ms": 797.4
+    },
+    {
+      "neuron_index": 129,
+      "time_ms": 797.5
+    },
+    {
+      "neuron_index": 156,
+      "time_ms": 797.5
+    },
+    {
+      "neuron_index": 12,
+      "time_ms": 797.6
+    },
+    {
+      "neuron_index": 83,
+      "time_ms": 797.6
+    },
+    {
+      "neuron_index": 74,
+      "time_ms": 797.7
+    },
+    {
+      "neuron_index": 99,
+      "time_ms": 797.7
+    },
+    {
+      "neuron_index": 1,
+      "time_ms": 797.8
+    },
+    {
+      "neuron_index": 29,
+      "time_ms": 797.8
+    },
+    {
+      "neuron_index": 147,
+      "time_ms": 797.8
+    },
+    {
+      "neuron_index": 133,
+      "time_ms": 797.9
+    },
+    {
+      "neuron_index": 138,
+      "time_ms": 798.0
+    },
+    {
+      "neuron_index": 11,
+      "time_ms": 798.3
+    },
+    {
+      "neuron_index": 51,
+      "time_ms": 798.3
+    },
+    {
+      "neuron_index": 34,
+      "time_ms": 798.4
+    },
+    {
+      "neuron_index": 31,
+      "time_ms": 798.6
+    },
+    {
+      "neuron_index": 120,
+      "time_ms": 798.7
+    },
+    {
+      "neuron_index": 96,
+      "time_ms": 798.8
+    },
+    {
+      "neuron_index": 61,
+      "time_ms": 798.9
+    },
+    {
+      "neuron_index": 70,
+      "time_ms": 798.9
+    },
+    {
+      "neuron_index": 23,
+      "time_ms": 799.0
+    },
+    {
+      "neuron_index": 59,
+      "time_ms": 799.1
+    },
+    {
+      "neuron_index": 152,
+      "time_ms": 799.2
+    },
+    {
+      "neuron_index": 97,
+      "time_ms": 799.3
+    },
+    {
+      "neuron_index": 107,
+      "time_ms": 799.3
+    },
+    {
+      "neuron_index": 94,
+      "time_ms": 799.5
+    },
+    {
+      "neuron_index": 158,
+      "time_ms": 799.6
+    },
+    {
+      "neuron_index": 95,
+      "time_ms": 799.8
+    }
+  ],
+  "giant_fiber_spike_ms": 635.9,
+  "motor_spike_ms": 636.0,
+  "total_sensory_neurons": 165
+}

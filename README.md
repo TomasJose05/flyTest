@@ -25,6 +25,7 @@ detector neurons       (bodyId 10010)               (bodyId 804642)
 | 1 | `fetch_circuit_connectivity.py` — test the first hypothesis | [`circuit_connectivity.json`](circuit_connectivity.json) |
 | 1b | `fetch_corrected_circuit.py` — the corrected circuit | [`circuit_connectivity_v2.json`](circuit_connectivity_v2.json) |
 | 2 | `simulate_circuit.py` — spiking simulation in Brian2 | `escape_circuit_test.png` |
+| 3 | `export_scenarios.py` — same circuit, three approach speeds, exported for the frontend | `exports/*.json` |
 
 Step 1 is kept on purpose: it is the step where the connectome rejected the original guess.
 The gravity-sensing neurons barely touch the Giant Fiber (weights of 2 and 4, i.e. noise),
@@ -46,6 +47,7 @@ website). `.env` is gitignored, so the token never leaves the machine.
 python explore_circuit.py          # step 0
 python fetch_corrected_circuit.py  # step 1b, refreshes the connectivity JSON
 python simulate_circuit.py         # step 2, runs the simulation and writes the raster plot
+python export_scenarios.py         # step 3, writes exports/*.json for the web frontend
 ```
 
 ### Windows / Norton note
