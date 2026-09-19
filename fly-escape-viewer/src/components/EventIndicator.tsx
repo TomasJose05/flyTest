@@ -25,7 +25,12 @@ export function EventIndicator({
   holdMs = 250,
   tone,
 }: Props) {
-  const never = eventMs === null;
+  // `== null` with two equals signs, not three, and deliberately so: it is true for BOTH
+  // null and undefined. The exporter always writes the key, so today it is always null or a
+  // number - but if a future JSON ever dropped the key, `=== null` would be false, the
+  // comparisons below would silently be false too, and the card would sit forever showing
+  // "waits until undefined ms" instead of admitting there is no escape to show.
+  const never = eventMs == null;
   const isFiring = !never && timeMs >= eventMs && timeMs - eventMs < holdMs;
   const hasFired = !never && timeMs >= eventMs;
 
